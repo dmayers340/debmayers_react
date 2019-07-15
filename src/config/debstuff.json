@@ -1,0 +1,97 @@
+{
+    "interests": [
+        "VR",
+        "AR",
+        "Ancient History",
+        "Classical Sculpture",
+        "UI",
+        "UX",
+        "HCI",
+        "Unity",
+        "3D Modelling"
+    ],
+    "facts": [
+        "I am an ancient historian, focused mainly on the Romans and the frontiers.",
+        "I love travelling",
+        "I am a VR/AR designer and developer. I actively create experiences as a hobby.",
+        "My coffee cup is an extension of my hand."
+    ],
+    "education": [
+        {
+            "name": "University of Glasgow",
+            "degree": "MSc Information Technology",
+            "year": "2017-2018"
+        },
+        {
+            "name": "University of Glasgow",
+            "degree": "MLitt Ancient Cultures",
+            "year": "2016-2017"
+        },
+        {
+            "name": "Duke University",
+            "degree": "BA Classical Civilization",
+            "year": "2011-2015"
+        },
+        {
+            "name": "Duke University",
+            "degree": "Certificate in Markets and Management Studies",
+            "year": "2011-2015"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Temple to Mithras at Carrawburgh",
+            "description": "Can people learn from a VR experience?",
+            "link": ","
+        },
+        {
+            "name": "Religious Landscape at Carrawburgh",
+            "description": "How can landscape and sensory archaeology help understand the relationship between the religious shrines and the spring at Carrawburgh? Was it the landscape or the troop stationed that left such an important religious footprint? How can 3D modelling be used as a tool to augment sensory and landscape archaeology?",
+            "link": ","
+        },
+        {
+            "name": "Corbridge Lion",
+            "description": "(Re)creating a bit of Corbridge Roman town with the Corbridge Lion fountian",
+            "link": ","
+        }
+    ],
+
+    "models": [
+        {
+            "name": "(Re)created Mithraeum",
+            "description": "Temple to Mithras: Carrawburgh",
+            "imageUrls": "",
+            "extraUrls": ""
+        },
+        {
+            "name": "Mithraeum Using Photoscan",
+            "description": "Photoscan of Carrawburgh Mithraeum",
+            "imageUrls": "",
+            "extraUrls": ""
+        },
+        {
+            "name": "University of Glasgow Main Building",
+            "description": "Main Building, University of Glasgow",
+            "imageUrls": "",
+            "extraUrls": ""
+        },
+        {
+            "name": "Various Models",
+            "description": "Various Models Made with 3DS and Photoscan",
+            "imageUrls": "",
+            "extraUrls": ""
+        },
+        {
+            "name": "Linlithgow Fountain",
+            "description": "",
+            "imageUrls": "",
+            "extraUrls": ""
+        },
+        {
+            "name": "Kelvingrove Fountain",
+            "description": "",
+            "imageUrls": "",
+            "extraUrls": ""
+        }
+    ]
+}
