@@ -19,13 +19,13 @@ export const Home = () => {
 
                 <div className="col-md-6">
                     Hi! Welcome to my site. I'm currently rebuilding it using React. Apologies for the construction, but check back soon and it may be working again!
-                    <img alt="Myself in front of a Classical Sculpture" src={process.env.PUBLIC_URL + '/img/CLSTMuesum.jpg'} /> 
+                    <img className = "image" alt="Myself in front of a Classical Sculpture" src={process.env.PUBLIC_URL + '/img/CLSTMuesum.jpg'} /> 
                 </div>		
             </div>
             <hr />
             <div className="row">
                 <div className="col-md-6">
-                    <img src={process.env.PUBLIC_URL + '/img/altarfire.png'} alt="Altar flame working" /><br />
+                    <img className = "image" src={process.env.PUBLIC_URL + '/img/altarfire.png'} alt="Altar flame working" /><br />
                 </div>
 
                 <div className="col-md-6">
@@ -45,12 +45,12 @@ export const Home = () => {
             <div className="row">
                 <div className="col-md-6">
                     <h2><strong>Last Project:</strong></h2><br />
-                    <h4><a href="#"><strong>Carrawburgh Mithraeum</strong></a></h4><br />
+                    <h4><strong>Carrawburgh Mithraeum</strong></h4><br />
                     <strong>Description:</strong><br />
                     Research question: Is VR an Effective Tool for Learning About the Past? <br />
                 </div>
                 <div className="col-md-6">
-                    <img className="lazy" src={process.env.PUBLIC_URL + '/img/Mithraeum_Front.jpg'} alt="Picture of the front of the Temple to Mithras at Carrawburgh"/>
+                    <img className="image" src={process.env.PUBLIC_URL + '/img/Mithraeum_Front.jpg'} alt="Front of the Temple to Mithras at Carrawburgh"/>
                 </div>
             </div>
         </div>

@@ -93,5 +93,20 @@
             "imageUrls": "",
             "extraUrls": ""
         }
+    ],
+    "experiences": [
+        {
+            "name": "Mithraeum",
+            "description": "Temple to Mithras: Carrawburgh",
+            "url": "",
+            "image": "process.env.PUBLIC_URL + '/img/Mithraeum2.jpg'"
+        },
+        {
+            "name": "Carrawburgh",
+            "description": "Carrawburgh 3D model Exploration",
+            "url": "",
+            "image": "process.env.PUBLIC_URL + '/img/CarrModel.png'"
+        }
+
     ]
 }
