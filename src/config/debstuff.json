@@ -60,19 +60,25 @@
         {
             "name": "(Re)created Mithraeum",
             "description": "Temple to Mithras: Carrawburgh",
-            "imageUrls": "",
+            "imageUrls": "img/Mithraeum2.jpg",
             "extraUrls": ""
         },
         {
             "name": "Mithraeum Using Photoscan",
             "description": "Photoscan of Carrawburgh Mithraeum",
-            "imageUrls": "",
+            "imageUrls": "img/PhotoscanMithraeum.png",
             "extraUrls": ""
         },
         {
             "name": "University of Glasgow Main Building",
             "description": "Main Building, University of Glasgow",
-            "imageUrls": "",
+            "imageUrls": "img/INSIDE_TOP_FIXED",
+            "extraUrls": ""
+        },
+        {
+            "name": "(Re)created Carrawburgh",
+            "description": "Carrawburgh",
+            "imageUrls": "img/carrawburgh3.png",
             "extraUrls": ""
         },
         {
@@ -84,13 +90,13 @@
         {
             "name": "Linlithgow Fountain",
             "description": "",
-            "imageUrls": "",
+            "imageUrls": "img/LinlithgowFountain.png",
             "extraUrls": ""
         },
         {
             "name": "Kelvingrove Fountain",
             "description": "",
-            "imageUrls": "",
+            "imageUrls": "img/KelvingroveFountain_03.png",
             "extraUrls": ""
         }
     ],
@@ -99,13 +105,95 @@
             "name": "Mithraeum",
             "description": "Temple to Mithras: Carrawburgh",
             "url": "",
-            "image": "process.env.PUBLIC_URL + '/img/Mithraeum2.jpg'"
+            "image": "img/Mithraeum2.jpg"
         },
         {
             "name": "Carrawburgh",
             "description": "Carrawburgh 3D model Exploration",
             "url": "",
-            "image": "process.env.PUBLIC_URL + '/img/CarrModel.png'"
+            "image": "img/CarrModel.png"
+        }
+
+    ],
+    "cv": [
+        {
+            "work": [
+                {
+                    "name": "Centre for Advanced Hindsight",
+                    "location": "",
+                    "title": "",
+                    "responsibilities": [
+                        ""
+                    ],
+                    "time": ""
+        
+                }
+            ]
+        }
+    ],
+    "sketchfabModels": [
+        {
+            "name": "Corbridge Lion",
+            "url": "https://sketchfab.com/3d-models/corbridge-lion-ab740d01dc7f49018d45369014bfacb8?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/ab740d01dc7f49018d45369014bfacb8/embed"
+        },
+        {
+            "name": "Relief of Sol from Corbridge",
+            "url": "https://sketchfab.com/3d-models/relief-of-sol-from-corbridge-ccc6565d3b49425f90686d5779a3ba9a?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/ccc6565d3b49425f90686d5779a3ba9a/embed"
+        },
+        {
+            "name": "Statue of Juno Regina from Chesters Roman Fort",
+            "url": "https://sketchfab.com/3d-models/statue-of-juno-regina-from-chesters-roman-fort-8c9af76382c64c4ba019d47156f57cf5?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/8c9af76382c64c4ba019d47156f57cf5/embed"
+        },
+        {
+            "name": "Stone Balls Aberdeenshire",
+            "url": "https://sketchfab.com/3d-models/stone-balls-aberdeenshire-a094e8663e0447a1bd42e4a127c8180c?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/a094e8663e0447a1bd42e4a127c8180c/embed"
+        },
+        {
+            "name": "Linlithgow Fountain",
+            "url": "https://sketchfab.com/models/27d658b2b63a4521ab661c8350a34abf?utm_medium=embed&utm_source=website&utm_campain=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/27d658b2b63a4521ab661c8350a34abf/embed"
+        },
+        {
+            "name": "Glasgow Main Building",
+            "url": "https://sketchfab.com/models/3df8aae0202e45f7b2143d50d386fae7?utm_medium=embed&utm_source=website&utm_campain=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/3df8aae0202e45f7b2143d50d386fae7/embed"
+        },
+        {
+            "name": "Carrawburgh Roman Fort",
+            "url": "https://sketchfab.com/models/5c775ab2a6184ad98675305f6652ef59?utm_medium=embed&utm_source=website&utm_campain=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/5c775ab2a6184ad98675305f6652ef59/embed"
+        },
+        {
+            "name": "Temple to Mithras at Carrawburgh",
+            "url": "https://sketchfab.com/models/36cb436152b84d3d9c1549b0ed69ccef?utm_medium=embed&utm_source=website&utm_campain=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/36cb436152b84d3d9c1549b0ed69ccef/embed"
+        },
+        {
+            "name": "Carrawburgh Mithraeum",
+            "url": "https://sketchfab.com/models/8b0a0cdb2e02428bab3451dfb3e31128?utm_medium=embed&utm_source=website&utm_campain=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/8b0a0cdb2e02428bab3451dfb3e31128/embed"
         }
 
     ]
