@@ -6,6 +6,8 @@ import { About } from './About';
 import { Contact } from './Contact';
 import { ExperienceList} from './ExperienceList';
 import { ModelsList } from './ModelsList';
+import { Model } from './Model';
+import { ProjectInformation } from './ProjectInformation'
 import { ProjectList } from './ProjectList';
 import { Experience } from './Experience';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,10 +36,10 @@ export const SiteNavbar = () => {
                 <NavLink  to={'/models'} className="nav-link">Models</NavLink>
                 <NavLink  to={'/cv'} className="nav-link">CV</NavLink >
                 <NavLink  to={'/contact'} className="nav-link">Contact</NavLink>
-                <a href ="https://twitter.com/debmayers24"><FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'twitter']} /></a>
-                <a href = "https://www.linkedin.com/in/deborahmayers/"> <FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'linkedin']} /></a>
-                <a href="https://github.com/dmayers340"><FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'github']} /></a>
-                <a href="https://sketchfab.com/debmayers24"><FontAwesomeIcon pull = "right" size="lg" icon={faCube} /></a>
+                <a href ="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'twitter']} aria-hidden="true"/></a>
+                <a href = "https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"> <FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'linkedin']} aria-hidden="true"/></a>
+                <a href="https://github.com/dmayers340" aria-label="Github"><FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'github']} aria-hidden="true"/></a>
+                <a href="https://sketchfab.com/debmayers24" aria-label="Sketchfab"><FontAwesomeIcon pull = "right" size="lg" icon={faCube} aria-hidden="true"/></a>
             </Nav>
         </Navbar.Collapse>
       </Navbar>        
@@ -49,6 +51,8 @@ export const SiteNavbar = () => {
           <Route exact path='/experiences' component={ExperienceList} />
           <Route path='/experiences/:name' render={Experience} />
           <Route exact path='/models' component={ModelsList} />
+          <Route path='/models/:name' render={Model} />
+          <Route path='/projects/:name' render={ProjectInformation} />
           <Route exact path='/ar' component={UnderConstruction} />
           <Route exact path='/webvr' component={UnderConstruction} />
           <Route exact path='/projects' component={ProjectList} />

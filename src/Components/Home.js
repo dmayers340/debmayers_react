@@ -26,18 +26,14 @@ export const Home = () => {
 
             <Card style={{ width: '20rem' }}>
                 <Card.Body>
+                    <Card.Title>Links:</Card.Title>
                     <Card.Img variant="top" src={process.env.PUBLIC_URL + '/img/altarfire.png'} alt="Altar flame working" />
-                    <Card.Text>
-                        Here are a few links to find me at various places on the internet:
-                        <ul>
-                        <li className = "link-text"><a href="https://sketchfab.com/debmayers24">Sketchfab</a></li>
-                        <li className = "link-text"><a href="https://twitter.com/debmayers24">Twitter</a></li>
-                        <li className = "link-text"><a href="https://www.linkedin.com/in/deborahmayers/">LinkedIn</a></li>
-                        <li className = "link-text"><a href="https://github.com/dmayers340/">Github</a></li>
-                        <li className = "link-text"><a href="https://www.researchgate.net/publication/329104765_Remembering_Mithras_Can_VR_be_used_to_learn_about_the_past">Research
-                                Gate: Dissertation</a></li>
-                    </ul>
-                    </Card.Text>
+                        <Card.Text><a href="https://sketchfab.com/debmayers24">Sketchfab</a></Card.Text>
+                        <Card.Text><a href="https://twitter.com/debmayers24">Twitter</a></Card.Text>
+                        <Card.Text><a href="https://www.linkedin.com/in/deborahmayers/">LinkedIn</a></Card.Text>
+                        <Card.Text><a href="https://github.com/dmayers340/">Github</a></Card.Text>
+                        <Card.Text><a href="https://www.researchgate.net/publication/329104765_Remembering_Mithras_Can_VR_be_used_to_learn_about_the_past">Research
+                                Gate: Dissertation</a></Card.Text>
                 </Card.Body>
             </Card>
 

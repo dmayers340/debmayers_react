@@ -42,17 +42,23 @@
         {
             "name": "Temple to Mithras at Carrawburgh",
             "description": "Can people learn from a VR experience?",
-            "link": ","
+            "link": ",",
+            "imageUrls": "img/mithraeum_reconstructed.jpg",
+            "imageAlt": "(Re)Created Temple to Mithras at Carrawburgh, displaying the nave with altars and the cult statue behind."
         },
         {
             "name": "Religious Landscape at Carrawburgh",
             "description": "How can landscape and sensory archaeology help understand the relationship between the religious shrines and the spring at Carrawburgh? Was it the landscape or the troop stationed that left such an important religious footprint? How can 3D modelling be used as a tool to augment sensory and landscape archaeology?",
-            "link": ","
+            "link": ",",
+            "imageUrls": "img/carrawburgh3.png",
+            "imageAlt": "(Re)Created Temple to Mithras at Carrawburgh"
         },
         {
             "name": "Corbridge Lion",
             "description": "(Re)creating a bit of Corbridge Roman town with the Corbridge Lion fountian",
-            "link": ","
+            "link": ",",
+            "imageUrls": "img/CorbridgeLion.png",
+            "imageAlt": "(Re)Created Corbridge Roman Town, with lion fountain inside a basin"
         }
     ],
 
@@ -61,42 +67,49 @@
             "name": "(Re)created Mithraeum",
             "description": "Temple to Mithras: Carrawburgh",
             "imageUrls": "img/Mithraeum2.jpg",
+            "imageAlt": "(Re)Created Temple to Mithras at Carrawburgh",
             "extraUrls": ""
         },
         {
             "name": "Mithraeum Using Photoscan",
             "description": "Photoscan of Carrawburgh Mithraeum",
             "imageUrls": "img/PhotoscanMithraeum.png",
+            "imageAlt": "Photoscan 3d model of the temple to Mithras at Carrawburgh",
             "extraUrls": ""
         },
         {
             "name": "University of Glasgow Main Building",
             "description": "Main Building, University of Glasgow",
             "imageUrls": "img/university_render.png",
+            "imageAlt": "3D model reconstruction of the Univeristy of Glasgow's Main Building",
             "extraUrls": ""
         },
         {
             "name": "(Re)created Carrawburgh",
             "description": "Carrawburgh",
             "imageUrls": "img/carrawburgh3.png",
+            "imageAlt": "(Re)Created 3d model of Carrawburgh around the third centry with the fort, mithraeum, shrine to nymphs and genius loci, and Coventina's well",
             "extraUrls": ""
         },
         {
             "name": "Various Models",
             "description": "Various Models Made with 3DS and Photoscan",
             "imageUrls": "",
+            "imageAlt": "",
             "extraUrls": ""
         },
         {
             "name": "Linlithgow Fountain",
             "description": "",
             "imageUrls": "img/LinlithgowFountain.png",
+            "imageAlt": "Photoscan 3D model of the Linlithgow fountain",
             "extraUrls": ""
         },
         {
             "name": "Kelvingrove Fountain",
             "description": "",
             "imageUrls": "img/KelvingroveFountain_03.png",
+            "imageAlt": "Photoscan 3D model of the Kelvingrove fountain",
             "extraUrls": ""
         }
     ],
@@ -105,13 +118,15 @@
             "name": "Mithraeum",
             "description": "Temple to Mithras: Carrawburgh",
             "url": "",
-            "image": "img/Mithraeum2.jpg"
+            "image": "img/Mithraeum2.jpg",
+            "imageAlt": "(Re)Created Temple to Mithras at Carrawburgh"
         },
         {
             "name": "Carrawburgh",
             "description": "Carrawburgh 3D model Exploration",
             "url": "",
-            "image": "img/CarrModel.png"
+            "image": "img/CarrModel.png",
+            "imageAlt": "(Re)Created 3d model of Carrawburgh"
         }
 
     ],
@@ -137,63 +152,72 @@
             "url": "https://sketchfab.com/3d-models/corbridge-lion-ab740d01dc7f49018d45369014bfacb8?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
-            "iframesrc": "https://sketchfab.com/models/ab740d01dc7f49018d45369014bfacb8/embed"
+            "iframesrc": "https://sketchfab.com/models/ab740d01dc7f49018d45369014bfacb8/embed",
+            "imageAlt": "3D model of the Corbridge Lion fountain statue"
         },
         {
             "name": "Relief of Sol from Corbridge",
             "url": "https://sketchfab.com/3d-models/relief-of-sol-from-corbridge-ccc6565d3b49425f90686d5779a3ba9a?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
-            "iframesrc": "https://sketchfab.com/models/ccc6565d3b49425f90686d5779a3ba9a/embed"
+            "iframesrc": "https://sketchfab.com/models/ccc6565d3b49425f90686d5779a3ba9a/embed",
+            "imageAlt": "3D model of the Relief of Sol from Corbridge"
         },
         {
             "name": "Statue of Juno Regina from Chesters Roman Fort",
             "url": "https://sketchfab.com/3d-models/statue-of-juno-regina-from-chesters-roman-fort-8c9af76382c64c4ba019d47156f57cf5?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
-            "iframesrc": "https://sketchfab.com/models/8c9af76382c64c4ba019d47156f57cf5/embed"
+            "iframesrc": "https://sketchfab.com/models/8c9af76382c64c4ba019d47156f57cf5/embed",
+            "imageAlt": "3D model of the statue of Juno Regina from Chesters Roman Fort"
         },
         {
             "name": "Stone Balls Aberdeenshire",
             "url": "https://sketchfab.com/3d-models/stone-balls-aberdeenshire-a094e8663e0447a1bd42e4a127c8180c?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
-            "iframesrc": "https://sketchfab.com/models/a094e8663e0447a1bd42e4a127c8180c/embed"
+            "iframesrc": "https://sketchfab.com/models/a094e8663e0447a1bd42e4a127c8180c/embed",
+            "imageAlt": "3D model of Stone Balls from Aberdeenshire found in Kelvingrove museum, 3 balls with different patterns"
         },
         {
             "name": "Linlithgow Fountain",
             "url": "https://sketchfab.com/models/27d658b2b63a4521ab661c8350a34abf?utm_medium=embed&utm_source=website&utm_campain=share-popup",
             "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
-            "iframesrc": "https://sketchfab.com/models/27d658b2b63a4521ab661c8350a34abf/embed"
+            "iframesrc": "https://sketchfab.com/models/27d658b2b63a4521ab661c8350a34abf/embed",
+            "imageAlt": "3D model of the Linlithgow Fountain at Linlithgow Palace"
         },
         {
             "name": "Glasgow Main Building",
             "url": "https://sketchfab.com/models/3df8aae0202e45f7b2143d50d386fae7?utm_medium=embed&utm_source=website&utm_campain=share-popup",
             "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
-            "iframesrc": "https://sketchfab.com/models/3df8aae0202e45f7b2143d50d386fae7/embed"
+            "iframesrc": "https://sketchfab.com/models/3df8aae0202e45f7b2143d50d386fae7/embed",
+            "imageAlt": "3D model of the University of Glasgow's Main Building"
         },
         {
             "name": "Carrawburgh Roman Fort",
             "url": "https://sketchfab.com/models/5c775ab2a6184ad98675305f6652ef59?utm_medium=embed&utm_source=website&utm_campain=share-popup",
             "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
-            "iframesrc": "https://sketchfab.com/models/5c775ab2a6184ad98675305f6652ef59/embed"
+            "iframesrc": "https://sketchfab.com/models/5c775ab2a6184ad98675305f6652ef59/embed",
+            "imageAlt": "(Re)Constructed 3D model of the Carrawburgh Roman Fort"
         },
         {
             "name": "Temple to Mithras at Carrawburgh",
             "url": "https://sketchfab.com/models/36cb436152b84d3d9c1549b0ed69ccef?utm_medium=embed&utm_source=website&utm_campain=share-popup",
             "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
-            "iframesrc": "https://sketchfab.com/models/36cb436152b84d3d9c1549b0ed69ccef/embed"
+            "iframesrc": "https://sketchfab.com/models/36cb436152b84d3d9c1549b0ed69ccef/embed",
+            "imageAlt": "3D model of the Mithraeum at Carrawburgh reconstructed"
         },
         {
             "name": "Carrawburgh Mithraeum",
             "url": "https://sketchfab.com/models/8b0a0cdb2e02428bab3451dfb3e31128?utm_medium=embed&utm_source=website&utm_campain=share-popup",
             "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
-            "iframesrc": "https://sketchfab.com/models/8b0a0cdb2e02428bab3451dfb3e31128/embed"
+            "iframesrc": "https://sketchfab.com/models/8b0a0cdb2e02428bab3451dfb3e31128/embed",
+            "imageAlt": "3D model of the Mithraeum at Carrawburgh reconstructed"
         }
 
     ]

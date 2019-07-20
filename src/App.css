@@ -4,7 +4,27 @@
   width: 100vw;
   overflow: auto;
 }
-
+#twitter-widget-0 .timeline-Widget {
+  color: #20399D
+}
+a {
+  color: #20399D
+}
+.customisable-highlight {
+  color: #20399D
+}
+.PrettyLink-value {
+  color: #20399D
+}
+.TweetAuthor{
+  color: #000000;
+}
+.Identity-screenName{
+  color: #000000 !important;
+}
+.timeline-Tweet-retweetCredit{
+  color: #000000 !important;
+}
 .main-container{
   height:100vh;
   width:100vw;
@@ -21,4 +41,7 @@
   direction: row;
   justify-content: space-around;
   margin: 20px;
+}
+.nav-link{
+  color: #ffffff !important; 
 }
