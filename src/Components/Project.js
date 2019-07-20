@@ -17,7 +17,7 @@ export const Project = props => {
             </Card>
             
         ) : (
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '20rem' }}>
                 <Card.Body>
                 <Card.Title>{project.name}</Card.Title>
                 <Card.Img variant="top" src={project.imageUrls} />

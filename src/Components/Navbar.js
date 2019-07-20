@@ -41,7 +41,7 @@ export const SiteNavbar = () => {
             </Nav>
         </Navbar.Collapse>
       </Navbar>        
-      <hr />
+
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/contact' component={Contact} />
