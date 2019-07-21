@@ -45,3 +45,9 @@ a {
 .nav-link{
   color: #ffffff !important; 
 }
+
+.arcode{
+  margin-top: 10vh;
+  text-align: center;
+  align-content: center;
+}

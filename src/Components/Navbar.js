@@ -13,6 +13,8 @@ import { Experience } from './Experience';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCube } from "@fortawesome/free-solid-svg-icons";
 import {UnderConstruction} from './UnderConstruction';
+import { WebAR } from './WebAR';
+import { WebVR } from './WebVR';
 
 export const SiteNavbar = () => {
     return (
@@ -34,7 +36,6 @@ export const SiteNavbar = () => {
                 <NavLink  to={'/experiences'} className="nav-link">Experiences</NavLink>
                 <NavLink to={'/projects'} className="nav-link">Projects</NavLink>
                 <NavLink  to={'/models'} className="nav-link">Models</NavLink>
-                <NavLink  to={'/cv'} className="nav-link">CV</NavLink >
                 <NavLink  to={'/contact'} className="nav-link">Contact</NavLink>
                 <a href ="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'twitter']} aria-hidden="true"/></a>
                 <a href = "https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"> <FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'linkedin']} aria-hidden="true"/></a>
@@ -53,10 +54,10 @@ export const SiteNavbar = () => {
           <Route exact path='/models' component={ModelsList} />
           <Route path='/models/:name' render={Model} />
           <Route path='/projects/:name' render={ProjectInformation} />
-          <Route exact path='/ar' component={UnderConstruction} />
-          <Route exact path='/webvr' component={UnderConstruction} />
+          <Route exact path='/ar' component={WebAR} />
+          <Route exact path='/webvr' component={WebVR} />
           <Route exact path='/projects' component={ProjectList} />
-          <Route exact path='/cv' component={UnderConstruction} />
+          <Route component = {UnderConstruction} />
         </Switch>
         </>
     )
