@@ -2,7 +2,6 @@ import React from 'react';
 
 export const WebAR = () => {
     const script = document.createElement("script");
-
     script.src = "//cdn.8thwall.com/web/share/embed8.js";
     script.async = true;
 
@@ -10,7 +9,7 @@ export const WebAR = () => {
     return (
         <div className = 'arcode'>
             <h1>Testing WebAR</h1>
-            <a data-8code="hykve"></a>
+            <a className = "embed8-link" href = "https://8th.io/hykve" data-attached="true">See the (re)created altars from the Carrawburgh Temple to Mithras on Project 8th wall</a>
         </div>
     )
 }

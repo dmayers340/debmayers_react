@@ -1,0 +1,41 @@
+{
+    "freestyleModels": [
+        {
+            "name": "(Re)created Carrawburgh",
+            "description": [
+                "Project for MLitt Ancient Cultures Dissertation, The Religious Landscape of Carrawburgh.",
+                "The goal was to understand the religious landscape of Carrawburgh using sensory archaeology and 3d modelling.",
+                "Carrawburgh is a Roman fort on Hadrian's Wall that had three shrines along the fort borders.",
+                "It is famous for Coventina's Well, which contained over 13,000 coins and was discovered in the 1800s by John Clayton.",
+                "It is also home to the Temple to Mithras and the shrine to the Nymphs and Genius Loci."
+            ],
+            "imageURLs": [
+                {
+                    "name": "Carrawburgh c. AD 133",
+                    "path": "img/carrawburgh1.png",
+                    "alt": "(Re)Created model of the Roman fort at Carrawburgh circa AD 133. Contains the fort and Coventina's Well."
+                },
+                {
+                    "name": "Carrawburgh c. AD 198",
+                    "path": "img/carrawburgh2.png",
+                    "alt": "(Re)Created model of the Roman fort at Carrawburgh circa AD 198. Contains the fort, mithraeum, and Coventina's Well."
+                },
+                {
+                    "name": "Carrawburgh c. AD 300",
+                    "path": "img/carrawburgh3.png",
+                    "alt": "(Re)Created model of the Roman fort at Carrawburgh circa AD 300. Contains the fort, mithraeum, Shrine to the Nymphs and Genius Loci, and Coventina's Well."
+                }
+            ],
+            "extraUrls": [
+                {
+                    "name": "Carrawburgh Experience",
+                    "url": "experiences/carrawburgh"
+                },
+                {
+                    "name": "Carrawburgh Project",
+                    "url": "projects/carrawburgh"
+                }
+            ]
+        }
+    ]
+}
