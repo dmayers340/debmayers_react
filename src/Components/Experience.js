@@ -3,20 +3,41 @@ import Unity, { UnityContent } from "react-unity-webgl";
 import { experiences } from '../config/debstuff.json';
 
 let currentExperience;
+let unityContent;
 export const Experience = (props) => {
     experiences.map(curr => {
         if(curr.name === props.match.params.name){
             currentExperience = curr;
         }
     });
-    // if the experience == something frm config return config suttf 
-    // if(props.match.params.name === 'Mithraeum'){
-    //     return (
-    //         <h1>Mithraeum</h1>
-    //         )
-    // } else if (props.match.params.name === 'Carrawburgh') {
-        
-    // } else {
+    if(currentExperience.name === 'Mithraeum'){
+        unityContent = new UnityContent(
+            "../webgl/Build/webgl.json",
+            "../webgl/Build/UnityLoader.js"
+        );
+
+        return (
+            <Unity unityContent={unityContent} />
+        )
+    } else if(currentExperience.name === 'Space Shooter') {
+        unityContent = new UnityContent(
+            "../SpaceShooter/Build/SpaceShooter.json",
+            "../SpaceShooter/Build/UnityLoader.js"
+        );
+
+        return (
+            <Unity unityContent={unityContent} />
+        )
+    } else if(currentExperience.name === 'Roll the Ball'){
+        unityContent = new UnityContent(
+            "../RollTheBall/Build/Webgl_Build.json",
+            "../RollTheBall/Build/UnityLoader.js"
+        );
+
+        return (
+            <Unity unityContent={unityContent} />
+        )
+    } else {
         return(
             <div>
                 <h1>{props.match.params.name}</h1>
@@ -25,5 +46,5 @@ export const Experience = (props) => {
                 <p>{currentExperience.description}</p>            
             </div>
         )
-    // }
+    }
 }
