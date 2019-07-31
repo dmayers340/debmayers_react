@@ -13,7 +13,14 @@ export const Home = () => {
                     </Card.Text>
                 </Card.Body>
             </Card>
-        	
+        	 <Card style={{ width: '20rem' }}>
+                <Card.Body>
+                    <Card.Img variant="top" alt="Myself in front of a Classical Sculpture" src={process.env.PUBLIC_URL + '/img/mithraeum_reconstructed.jpg'} />
+                    <Card.Text>
+                        Download my Mithraeum APK for the Oculus Quest< a href="https://drive.google.com/open?id=1MpdORGaxbUzkkAsqrUg4txP_kA3ZMvrS" download> here! </a>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
             <Card style={{ width: '20rem' }}>
                 <Card.Body>
                     <TwitterTimelineEmbed
