@@ -15,9 +15,9 @@ export const Home = () => {
             </Card>
         	 <Card style={{ width: '20rem' }}>
                 <Card.Body>
-                    <Card.Img variant="top" alt="Myself in front of a Classical Sculpture" src={process.env.PUBLIC_URL + '/img/mithraeum_reconstructed.jpg'} />
+                    <Card.Img variant="top" alt="Myself with VR headset on" src={process.env.PUBLIC_URL + '/img/self_vr_train.jpg'} />
                     <Card.Text>
-                        Download my Mithraeum APK for the Oculus Quest< a href="https://drive.google.com/open?id=1MpdORGaxbUzkkAsqrUg4txP_kA3ZMvrS" download> here! </a>
+                        Download my Mithraeum APK for the Oculus Quest< a href="https://drive.google.com/open?id=1MpdORGaxbUzkkAsqrUg4txP_kA3ZMvrS"> here! </a>
                     </Card.Text>
                 </Card.Body>
             </Card>
