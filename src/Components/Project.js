@@ -3,11 +3,12 @@ import { Card } from 'react-bootstrap';
 import { Link, Route } from 'react-router-dom';
 import { Model } from './Model';
 
-export const Project = props => {
+export const Project = (props) => {
+    const {match} = props;
     const project = props.project;
     return props.hasIFrame ? (
-        <Card style={{ width: '20rem' }}>
-                <Card.Body>
+        <Card style={{ width: '20rem', marginBottom: '1rem' }}>
+            <Card.Body>
                     <Card.Title>{project.name}</Card.Title>
                     <iframe title ={project.name} src={project.iframesrc} alt={project.imgAlt} frameBorder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" />
                     <Card.Text><a href={project.url}>{project.name}</a></Card.Text>
@@ -16,16 +17,12 @@ export const Project = props => {
                 </Card.Body>
             </Card>   
         ) : (
-            <Card style={{ width: '20rem' }}>
-                <Card.Body>
+            <Card  key={project.name} style={{ width: '20rem', marginBottom: '1rem' }}>
                 <Card.Title>{project.name}</Card.Title>
-                <Card.Img variant="top" src={project.imageUrls} alt={project.imageAlt} />
-                    <Card.Text>{project.subtitle}</Card.Text>
-                    <Card.Text>{project.description}</Card.Text>
-                    <Link to={`${props.match.url}/${props.project.name}`}>Go to {props.project.name}</Link> 
-                    <Route path={`${props.match.path}/:id`} exact component={Model} />
-                </Card.Body>
+                <Card.Text>{project.subtitle}</Card.Text>
+                <Card.Img variant="top" src={project.mainImageUrl} alt={project.mainImageAlt} />
+                <Link to={`${match.url}/${project.urlName}`}>Go to {project.name}</Link> 
+                <Route path={`${match.path}/:id`} exact component={Model} />
             </Card>
-            
         )
 }

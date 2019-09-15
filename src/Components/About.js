@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap';
 export const About = () => {
     return (
         <div className = "row">
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '20rem', marginBottom: '1rem' }}>
                 <Card.Body>
                     <Card.Title>Interests</Card.Title>
                     <Card.Img variant="top" src='img/Arran_v02.jpg' alt='Sea on the way to Arran'/>
@@ -16,7 +16,7 @@ export const About = () => {
                 </Card.Body>
             </Card> 
 
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '20rem', marginBottom: '1rem' }}>
                 <Card.Body>
                     <Card.Title>Facts</Card.Title>
                     <Card.Img variant="top" src='img/DurhamCathedral.jpg' alt = 'Durham Cathedral'/>
@@ -27,7 +27,7 @@ export const About = () => {
                 </Card.Body>
             </Card> 
 
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '20rem', marginBottom: '1rem' }}>
                 <Card.Body>
                     <Card.Title>Education</Card.Title>
                     <Card.Img variant="top" src='img/Canterbury_Cathedral_v01.jpg' alt='Canterbury Cathedral' />
@@ -42,7 +42,7 @@ export const About = () => {
                 </Card.Body>
             </Card> 
 
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '20rem', marginBottom: '1rem' }}>
                 <Card.Body>
                     <Card.Title>Projects</Card.Title>
                     <Card.Img variant="top" src='img/Mithraeum.jpg' alt='Temple to Mithras at Carrawburgh'/>

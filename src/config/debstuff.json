@@ -42,23 +42,65 @@
         {
             "name": "Temple to Mithras at Carrawburgh",
             "description": "Can people learn from a VR experience?",
-            "link": ",",
-            "imageUrls": "/img/mithraeum_reconstructed.jpg",
-            "imageAlt": "(Re)Created Temple to Mithras at Carrawburgh, displaying the nave with altars and the cult statue behind."
+            "link": "https://www.youtube.com/embed/hHQXRn7V1MU",
+            "mainImageAlt": "(Re)Created Temple to Mithras at Carrawburgh, displaying the nave with altars and the cult statue behind.",
+            "mainImageUrl": "/img/mithraeum_reconstructed.jpg",
+            "images": [
+                {
+                    "imgSrc": "/img/graph1.png",
+                    "imgAlt": "Number of Questions Answered Correctly on the Learning Questionnaire"
+                },
+                {
+                    "imgSrc": "/img/graph2.png",
+                    "imgAlt": "Factors measured on the Post Experience Questionnaire (7 high, 1 low)"
+                },
+                {
+                    "imgSrc": "/img/graph3.png",
+                    "imgAlt": "Sensory factors measured on the Post Experience Questionnaire"
+                }
+            ],
+            "document": "/doc/Mayers2018_MScDissertation_UoG.pdf",
+            "urlName": "mithraeum"
         },
         {
             "name": "Religious Landscape at Carrawburgh",
             "description": "How can landscape and sensory archaeology help understand the relationship between the religious shrines and the spring at Carrawburgh? Was it the landscape or the troop stationed that left such an important religious footprint? How can 3D modelling be used as a tool to augment sensory and landscape archaeology?",
             "link": ",",
-            "imageUrls": "/img/carrawburgh3.png",
-            "imageAlt": "(Re)Created Temple to Mithras at Carrawburgh"
+            "urlName": "carrawburgh",
+            "mainImageAlt": "(Re)Created Temple to Mithras at Carrawburgh",
+            "mainImageUrl": "/img/carrawburgh3.png",
+            "images": [
+                {
+                    "imgSrc": "/img/carrawburgh2.png",
+                    "imgAlt": "Photo of (Re) created Carrawburgh c. 133 AD"
+
+                },
+                {
+                    "imgSrc": "/img/carrawburgh1.png",
+                    "imgAlt": "Photo of (Re) created Carrawburgh c. 300 AD"
+
+                },
+                {
+                    "imgSrc": "/img/carrawburgh3.png",
+                    "imgAlt": "Photo of (Re) created Carrawburgh c. 400 AD"
+
+                }
+            ],
+            "document": "/doc/Mayers_ReligiousLandscapeCarrawburgh.pdf"
         },
         {
             "name": "Corbridge Lion",
-            "description": "(Re)creating a bit of Corbridge Roman town with the Corbridge Lion fountian",
+            "description": "(Re)creating a bit of Corbridge Roman town with the Corbridge Lion fountain",
             "link": ",",
-            "imageUrls": "/img/CorbridgeLion.png",
-            "imageAlt": "(Re)Created Corbridge Roman Town, with lion fountain inside a basin"
+            "mainImageUrl": "/img/CorbridgeLion.png",
+            "mainImageAlt": "(Re)Created Corbridge Roman Town, with lion fountain inside a basin",
+            "urlName": "corbridgelion",
+            "images": [
+                {
+                    "imgSrc": "/img/CorbridgeLion.png",
+                    "imgAlt": "(Re)Created Corbridge Roman Town, with lion fountain inside a basin"
+                }
+            ]
         }
     ],
 
@@ -66,51 +108,58 @@
         {
             "name": "(Re)created Mithraeum",
             "description": "Temple to Mithras: Carrawburgh",
-            "imageUrls": "/img/Mithraeum2.jpg",
-            "imageAlt": "(Re)Created Temple to Mithras at Carrawburgh",
-            "extraUrls": ""
+            "mainImageUrl": "/img/Mithraeum2.jpg",
+            "mainImageAlt": "(Re)Created Temple to Mithras at Carrawburgh",
+            "extraUrls": "",
+            "urlName": "recreatedMithraeum"
         },
         {
             "name": "Mithraeum Using Photoscan",
             "description": "Photoscan of Carrawburgh Mithraeum",
-            "imageUrls": "/img/PhotoscanMithraeum.png",
-            "imageAlt": "Photoscan 3d model of the temple to Mithras at Carrawburgh",
-            "extraUrls": ""
+            "mainImageUrl": "/img/PhotoscanMithraeum.png",
+            "mainImageAlt": "Photoscan 3d model of the temple to Mithras at Carrawburgh",
+            "extraUrls": "",
+            "urlName": "photoscanMithraeum"
         },
         {
             "name": "University of Glasgow Main Building",
             "description": "Main Building, University of Glasgow",
-            "imageUrls": "/img/university_render.png",
-            "imageAlt": "3D model reconstruction of the Univeristy of Glasgow's Main Building",
-            "extraUrls": ""
+            "mainImageUrl": "/img/university_render.png",
+            "mainImageAlt": "3D model reconstruction of the Univeristy of Glasgow's Main Building",
+            "extraUrls": "",
+            "urlName": "glasgowMainBuilding"
         },
         {
             "name": "(Re)created Carrawburgh",
             "description": "Carrawburgh",
-            "imageUrls": "/img/carrawburgh3.png",
-            "imageAlt": "(Re)Created 3d model of Carrawburgh around the third centry with the fort, mithraeum, shrine to nymphs and genius loci, and Coventina's well",
-            "extraUrls": ""
+            "mainImageUrl": "/img/carrawburgh3.png",
+            "mainImageAlt": "(Re)Created 3d model of Carrawburgh around the third centry with the fort, mithraeum, shrine to nymphs and genius loci, and Coventina's well",
+            "extraUrls": "",
+            "urlName": "recreatedCarrawburgh"
         },
         {
             "name": "Various Models",
             "description": "Various Models Made with 3DS and Photoscan",
-            "imageUrls": "",
-            "imageAlt": "",
-            "extraUrls": ""
+            "mainImageUrl": "",
+            "mainImageAlt": "",
+            "extraUrls": "",
+            "urlName": "variousModels"
         },
         {
             "name": "Linlithgow Fountain",
             "description": "",
-            "imageUrls": "/img/LinlithgowFountain.png",
-            "imageAlt": "Photoscan 3D model of the Linlithgow fountain",
-            "extraUrls": ""
+            "mainImageUrl": "/img/LinlithgowFountain.png",
+            "mainImageAlt": "Photoscan 3D model of the Linlithgow fountain",
+            "extraUrls": "",
+            "urlName": "linlithgowFountain"
         },
         {
             "name": "Kelvingrove Fountain",
             "description": "",
-            "imageUrls": "/img/KelvingroveFountain_03.png",
-            "imageAlt": "Photoscan 3D model of the Kelvingrove fountain",
-            "extraUrls": ""
+            "mainImageUrl": "/img/KelvingroveFountain_03.png",
+            "mainImageAlt": "Photoscan 3D model of the Kelvingrove fountain",
+            "extraUrls": "",
+            "urlName": "kelvingroveFountain"
         }
     ],
     "experiences": [

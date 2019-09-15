@@ -2,6 +2,7 @@
     "freestyleModels": [
         {
             "name": "(Re)created Carrawburgh",
+            "urlName": "recreatedCarrawburgh",
             "description": [
                 "Project for MLitt Ancient Cultures Dissertation, The Religious Landscape of Carrawburgh.",
                 "The goal was to understand the religious landscape of Carrawburgh using sensory archaeology and 3d modelling.",
@@ -12,30 +13,24 @@
             "imageURLs": [
                 {
                     "name": "Carrawburgh c. AD 133",
-                    "path": "img/carrawburgh1.png",
+                    "path": "/img/carrawburgh1.png",
                     "alt": "(Re)Created model of the Roman fort at Carrawburgh circa AD 133. Contains the fort and Coventina's Well."
                 },
                 {
                     "name": "Carrawburgh c. AD 198",
-                    "path": "img/carrawburgh2.png",
+                    "path": "/img/carrawburgh2.png",
                     "alt": "(Re)Created model of the Roman fort at Carrawburgh circa AD 198. Contains the fort, mithraeum, and Coventina's Well."
                 },
                 {
                     "name": "Carrawburgh c. AD 300",
-                    "path": "img/carrawburgh3.png",
+                    "path": "/img/carrawburgh3.png",
                     "alt": "(Re)Created model of the Roman fort at Carrawburgh circa AD 300. Contains the fort, mithraeum, Shrine to the Nymphs and Genius Loci, and Coventina's Well."
                 }
             ],
-            "extraUrls": [
-                {
-                    "name": "Carrawburgh Experience",
-                    "url": "experiences/carrawburgh"
-                },
-                {
-                    "name": "Carrawburgh Project",
-                    "url": "projects/carrawburgh"
-                }
-            ]
+            "experienceName": "Carrawburgh Experience",
+            "experienceUrl": "experiences/carrawburgh",        
+            "projectName": "Carrawburgh Project",
+            "projectUrl": "projects/carrawburgh"
         }
     ]
 }

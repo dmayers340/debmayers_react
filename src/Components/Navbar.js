@@ -21,7 +21,7 @@ export const SiteNavbar = () => {
         <>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="/"> <img
-        src="img/debmayers.png"
+        src="/img/debmayers.png"
         height="30"
         className="d-inline-block align-top"
         alt="Deb Mayers Logo"

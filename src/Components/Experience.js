@@ -1,9 +1,11 @@
 import React from 'react';
 import Unity, { UnityContent } from "react-unity-webgl";
 import { experiences } from '../config/debstuff.json';
+// import { CarrawburghExperience } from './CarrawburghExperience';
 
 let currentExperience;
 let unityContent;
+
 export const Experience = (props) => {
     experiences.map(curr => {
         if(curr.name === props.match.params.name){
@@ -37,13 +39,15 @@ export const Experience = (props) => {
         return (
             <Unity unityContent={unityContent} />
         )
-    } else {
+    } 
+    // else if(currentExperience.name === 'Carrawburgh'){
+    //     CarrawburghExperience();
+    //  } 
+     else{
         return(
             <div>
                 <h1>{props.match.params.name}</h1>
                 Currently working on how to display WebGL builds from Unity in React. Come back later to see the experience!
-                <img alt={currentExperience.imageAlt} src={currentExperience.image} />
-                <p>{currentExperience.description}</p>            
             </div>
         )
     }

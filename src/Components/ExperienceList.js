@@ -9,7 +9,7 @@ export const ExperienceList = ({match}) => {
         <div className = 'row'>
             {experiences.map(experience => {
                     return (
-                        <Card key={experience.name} style={{ width: '20rem' }}>
+                        <Card  key={experience.name} style={{ width: '20rem', marginBottom: '1rem' }}>
                             <Card.Title>{experience.name}</Card.Title>
                             <Card.Img variant="top" src={experience.image} alt={experience.imageAlt}/>
                             <Card.Text>{experience.description}</Card.Text>
