@@ -12,6 +12,7 @@ export const About = () => {
                     {interests.map(interest => (
                         <Card.Text key={interest}>{interest}</Card.Text>
                     ))}
+                    <Card.Img src='img/SycamoreGap.jpg' alt='Self in front of the statue of Athena at the Tenessee Parthenon'/>
                     <Card.Img variant="bottom" src='img/Vindolanda_02.jpg' alt='Fort at Vindolanda' />
                 </Card.Body>
             </Card> 

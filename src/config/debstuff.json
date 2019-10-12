@@ -43,6 +43,7 @@
             "name": "Temple to Mithras at Carrawburgh",
             "description": "Can people learn from a VR experience?",
             "link": "https://www.youtube.com/embed/hHQXRn7V1MU",
+            "linkDescription": "See the video of the mithraeum experience",
             "mainImageAlt": "(Re)Created Temple to Mithras at Carrawburgh, displaying the nave with altars and the cult statue behind.",
             "mainImageUrl": "/img/mithraeum_reconstructed.jpg",
             "images": [
@@ -65,7 +66,6 @@
         {
             "name": "Religious Landscape at Carrawburgh",
             "description": "How can landscape and sensory archaeology help understand the relationship between the religious shrines and the spring at Carrawburgh? Was it the landscape or the troop stationed that left such an important religious footprint? How can 3D modelling be used as a tool to augment sensory and landscape archaeology?",
-            "link": ",",
             "urlName": "carrawburgh",
             "mainImageAlt": "(Re)Created Temple to Mithras at Carrawburgh",
             "mainImageUrl": "/img/carrawburgh3.png",
@@ -91,7 +91,8 @@
         {
             "name": "Corbridge Lion",
             "description": "(Re)creating a bit of Corbridge Roman town with the Corbridge Lion fountain",
-            "link": ",",
+            "link": "https://sketchfab.com/3d-models/corbridge-lion-ab740d01dc7f49018d45369014bfacb8",
+            "linkDescription": "See the model on Sketchfab",
             "mainImageUrl": "/img/CorbridgeLion.png",
             "mainImageAlt": "(Re)Created Corbridge Roman Town, with lion fountain inside a basin",
             "urlName": "corbridgelion",
@@ -270,6 +271,31 @@
             "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
             "iframesrc": "https://sketchfab.com/models/8b0a0cdb2e02428bab3451dfb3e31128/embed",
             "imageAlt": "3D model of the Mithraeum at Carrawburgh reconstructed"
+        },
+        {
+            "name": "York Street Mural in Glasgow",
+            "url": "https://sketchfab.com/3d-models/glasgow-mural-on-york-steeet-2cc2ce8cde314723a1a7bfd487524dd6?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/2cc2ce8cde314723a1a7bfd487524dd6/embed",
+            "imageAlt": "3D model of the mural on York Street in Glasgow"
+        },
+        {
+            "name": "Hutcheson Hill Distance Slab",
+            "url": "https://sketchfab.com/3d-models/hutcheson-hill-distance-slab-5b0f440c75ac46458f2bf74d492d7e6f?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/5b0f440c75ac46458f2bf74d492d7e6f/embed",
+            "imageAlt": "3D model of the Hutcheson Hill Distance Slab"
+        },
+        {
+            
+            "name": "Duntocher Distance Slab",
+            "url": "https://sketchfab.com/3d-models/duntocher-distance-slab-67f32c8f6f324b2aa5c44a18e19b81e4?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "by": "https://sketchfab.com/debmayers24?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "on": "https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup",
+            "iframesrc": "https://sketchfab.com/models/67f32c8f6f324b2aa5c44a18e19b81e4/embed",
+            "imageAlt": "3D model of the Duntocher Distance Slab"
         }
 
     ]

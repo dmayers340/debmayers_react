@@ -32,7 +32,7 @@ export const Home = () => {
                 <Card style={{ width: '20rem', marginBottom: '1rem' }}>
                     <Card.Body>
                         <Card.Title>Links:</Card.Title>
-                        <Card.Img variant="top" src={process.env.PUBLIC_URL + '/img/mithraeum_reconstructed.jpg'} alt="Altar flame working" />
+                        <Card.Img variant="top" src={process.env.PUBLIC_URL + '/img/CorbridgeLion.png'} alt="Altar flame working" />
                             <Card.Text><a href="https://sketchfab.com/debmayers24">Sketchfab</a></Card.Text>
                             <Card.Text><a href="https://twitter.com/debmayers24">Twitter</a></Card.Text>
                             <Card.Text><a href="https://www.linkedin.com/in/deborahmayers/">LinkedIn</a></Card.Text>
@@ -49,6 +49,7 @@ export const Home = () => {
                             Last Project: Carrawburgh Mithraeum VR Experience.
                             Research question: Is VR an Effective Tool for Learning About the Past?
                         </Card.Text>
+                        <Card.Img variant="bottom" src={process.env.PUBLIC_URL + '/img/mithraeum_reconstructed.jpg'} alt="Front of the Temple to Mithras at Carrawburgh" />
                     </Card.Body>
                 </Card>
             </div>
