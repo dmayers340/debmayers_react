@@ -48,18 +48,17 @@ export const Home = () => {
                     </Card>
                 </Col>
                 <Col>
-                <Card style={{ width: '20rem', height: '40rem', marginBottom: '1rem' }}>
-                    <Card.Body>
-                        <Card.Img variant="top" src={process.env.PUBLIC_URL + '/img/Mithraeum_Front.jpg'} alt="Front of the Temple to Mithras at Carrawburgh" />
-                        <Card.Text>
-                            Last Project: Carrawburgh Mithraeum VR Experience.
-                            Research question: Is VR an Effective Tool for Learning About the Past?
-                        </Card.Text>
-                        <Card.Img variant="bottom" src={process.env.PUBLIC_URL + '/img/mithraeum_reconstructed.jpg'} alt="Front of the Temple to Mithras at Carrawburgh" />
-                    </Card.Body>
-                </Card>
+                    <Card style={{ width: '20rem', height: '40rem', marginBottom: '1rem' }}>
+                        <Card.Body>
+                            <Card.Img variant="top" src={process.env.PUBLIC_URL + '/img/Mithraeum_Front.jpg'} alt="Front of the Temple to Mithras at Carrawburgh" />
+                            <Card.Text>
+                                Last Project: Carrawburgh Mithraeum VR Experience.
+                                Research question: Is VR an Effective Tool for Learning About the Past?
+                            </Card.Text>
+                            <Card.Img variant="bottom" src={process.env.PUBLIC_URL + '/img/mithraeum_reconstructed.jpg'} alt="Front of the Temple to Mithras at Carrawburgh" />
+                        </Card.Body>
+                    </Card>
                 </Col>
-                
             </Row>
         </>
     )

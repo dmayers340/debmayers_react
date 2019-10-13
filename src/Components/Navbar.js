@@ -29,14 +29,14 @@ export const SiteNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-                <NavLink  to={'/'} className="nav-link"> Home </NavLink >
-                <NavLink  to={'/about'} className="nav-link">About</NavLink >
-                <NavLink  to={'/ar'} className="nav-link">AR</NavLink >
-                <NavLink  to={'/webvr'} className="nav-link">WebVR</NavLink>
-                <NavLink  to={'/experiences'} className="nav-link">Experiences</NavLink>
+                <NavLink to={'/'} className="nav-link"> Home </NavLink >
+                <NavLink to={'/about'} className="nav-link">About</NavLink >
+                <NavLink to={'/ar'} className="nav-link">AR</NavLink >
+                <NavLink to={'/webvr'} className="nav-link">WebVR</NavLink>
+                <NavLink to={'/experiences'} className="nav-link">Experiences</NavLink>
                 <NavLink to={'/projects'} className="nav-link">Projects</NavLink>
-                <NavLink  to={'/models'} className="nav-link">Models</NavLink>
-                <NavLink  to={'/contact'} className="nav-link">Contact</NavLink>
+                <NavLink to={'/models'} className="nav-link">Models</NavLink>
+                <NavLink to={'/contact'} className="nav-link">Contact</NavLink>
                 <a href ="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'twitter']} aria-hidden="true"/></a>
                 <a href = "https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"> <FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'linkedin']} aria-hidden="true"/></a>
                 <a href="https://github.com/dmayers340" aria-label="Github"><FontAwesomeIcon pull = "right" size="lg" icon={['fab', 'github']} aria-hidden="true"/></a>
