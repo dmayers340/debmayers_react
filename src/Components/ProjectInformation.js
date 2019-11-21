@@ -5,12 +5,9 @@ import { Card } from 'react-bootstrap';
 let currentExperience;
 
 export const ProjectInformation = (props) => {
-    console.log('props', props);
-    console.log('projectes', projects)
     projects.map(curr => {
         if(curr.urlName === props.match.params.name){
             currentExperience = curr;
-            console.log(curr);
         } else {
             console.log('current could not find');
         }
@@ -24,12 +21,17 @@ export const ProjectInformation = (props) => {
                     ) : null 
                 }</h4>
             <div className = "row">
-                {currentExperience.images.map(curr => (
-                    <Card key={curr.imgAlt} style={{ width: '20rem', marginBottom: '1rem' }}>
-                        <Card.Title>{curr.imgAlt}</Card.Title>
-                        <Card.Img variant="top" src={curr.imgSrc} alt={curr.imgAlt} />
-                    </Card>            
-                ))}
+                {currentExperience.video ? (
+                    <video width="400" controls>
+                        <source src={currentExperience.video} type="video/mp4" />
+                    </video>
+                ) : (
+                    currentExperience.images.map(curr => (
+                        <Card key={curr.imgAlt} style={{ width: '20rem', marginBottom: '1rem' }}>
+                            <Card.Title>{curr.imgAlt}</Card.Title>
+                            <Card.Img variant="top" src={curr.imgSrc} alt={curr.imgAlt} />
+                        </Card>            
+                )))}
             </div>
             <p>{currentExperience.description}</p>
             <p>{currentExperience.link ? (

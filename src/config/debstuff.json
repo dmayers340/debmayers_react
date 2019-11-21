@@ -102,6 +102,14 @@
                     "imgAlt": "(Re)Created Corbridge Roman Town, with lion fountain inside a basin"
                 }
             ]
+        },
+        {
+            "name": "VR Workplace Training",
+            "description": "Prototype to use Virtual Reality for workplace training. Currently creating an interactive office space before working on rigging and animation of characters.",
+            "video": "/interactableKeyboard.mp4",
+            "mainImageAlt": "Office Space",
+            "mainImageUrl": "/img/Workplace.png",
+            "urlName": "workplaceTraining"
         }
     ],
 
