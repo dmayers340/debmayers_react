@@ -1,5 +1,7 @@
 import React from 'react';
-import {interests, facts, education, projects} from '../config/debstuff.json';
+import {interests, facts, education} from '../config/debstuff.json';
+import {vr_projects} from '../config/projects.json';
+
 import { Card, Col, Row } from 'react-bootstrap';
 
 export const About = () => {
@@ -53,7 +55,7 @@ export const About = () => {
                     <Card.Body>
                         <Card.Title>Projects</Card.Title>
                         <Card.Img variant="top" src='img/Mithraeum.jpg' alt='Temple to Mithras at Carrawburgh'/>
-                        {projects.map(project => (
+                        {vr_projects.map(project => (
                             <Card key = {project.name + project.description}>
                                 <Card.Title>
                                     {project.name}

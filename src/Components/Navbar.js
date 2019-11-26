@@ -15,6 +15,8 @@ import { faCube } from "@fortawesome/free-solid-svg-icons";
 import { UnderConstruction } from './UnderConstruction';
 import { WebAR } from './WebAR';
 import { WebVR } from './WebVR';
+import { Presentations } from './Presentations';
+
 
 export const SiteNavbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -50,6 +52,7 @@ export const SiteNavbar = () => {
             <NavLink onClick={openNavbar} to={'/projects'} className="nav-link">Projects</NavLink>
             <NavLink onClick={openNavbar} to={'/models'} className="nav-link">Models</NavLink>
             <NavLink onClick={openNavbar} to={'/contact'} className="nav-link">Contact</NavLink>
+            <NavLink onClick={openNavbar} to={'/presentations'} className="nav-link">Presentations</NavLink>
             <a href="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'twitter']} aria-hidden="true" /></a>
             <a href="https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"> <FontAwesomeIcon pull="right" size="lg" icon={['fab', 'linkedin']} aria-hidden="true" /></a>
             <a href="https://github.com/dmayers340" aria-label="Github"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'github']} aria-hidden="true" /></a>
@@ -70,6 +73,7 @@ export const SiteNavbar = () => {
         <Route exact path='/ar' component={WebAR} />
         <Route exact path='/webvr' component={WebVR} />
         <Route exact path='/projects' component={ProjectList} />
+        <Route exact path='/presentations' component={Presentations} />
         <Route component={UnderConstruction} />
       </Switch>
     </>

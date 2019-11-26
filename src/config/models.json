@@ -31,6 +31,30 @@
             "experienceUrl": "experiences/carrawburgh",        
             "projectName": "Carrawburgh Project",
             "projectUrl": "projects/carrawburgh"
+        },
+        {
+            "name": "(Re)created Mithraeum",
+            "urlName": "recreatedMithraeum",
+            "description": [
+                "Project for MSc Dissertation, Remembering Mithras, Can VR be Used to Learn About the Past?",
+                "For this project, I developed a VR experience about the Temple to Mithras at Carrawburgh, and created an experiment to test if users remembered content from the experience."
+            ],
+            "imageURLs": [
+                {
+                    "name": "Mithraeum today",
+                    "path": "/img/Mithraeum_Front.jpg",
+                    "alt": "Front of the Carrawburgh mithraeum today. Rectangular stone base with casts of the altars in the apse."
+                },
+                {
+                    "name": "(Re)Construction of the Carrawburgh Mithraeum.",
+                    "path": "/img/mithraeum_reconstructed.jpg",
+                    "alt": "(Re)Construction of the Carrawburgh Mithraeum, stars on the celieng, painted walls, and altars."
+                }
+            ],
+            "experienceName": "Mithraeum Experience",
+            "experienceUrl": "experiences/mithraeum",        
+            "projectName": "Mithraeum Project",
+            "projectUrl": "projects/mithraeum"
         }
     ]
 }

@@ -1,11 +1,11 @@
 import React from 'react';
-import {projects} from '../config/debstuff.json';
+import {vr_projects} from '../config/projects.json';
 import { Card } from 'react-bootstrap';
 
 let currentExperience;
 
 export const ProjectInformation = (props) => {
-    projects.map(curr => {
+    vr_projects.map(curr => {
         if(curr.urlName === props.match.params.name){
             currentExperience = curr;
         } else {
