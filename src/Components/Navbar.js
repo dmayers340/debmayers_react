@@ -18,20 +18,16 @@ import { WebVR } from './WebVR';
 import { Presentations } from './Presentations';
 
 
-export const SiteNavbar = () => {
+export const SiteNavbar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const openNavbar = () => {
-    setIsOpen(!isOpen);
-  };
-  
-  const collapseClass = isOpen ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
+  const collapseClass = isOpen ? 'collapse navbar-collapse show' : 'collapse navbar-collapse' ;
   const toggleClass = isOpen ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
 
   return (
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/" onClick={openNavbar}>
+        <Navbar.Brand href="/" onClick={() => setIsOpen(!isOpen)}>
           <img
             src="/img/debmayers.png"
             height="30"
@@ -39,20 +35,20 @@ export const SiteNavbar = () => {
             alt="Deb Mayers Logo"
           />
         </Navbar.Brand>
-        <button onClick={openNavbar} className={`${toggleClass}`} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button onClick={() => setIsOpen(!isOpen)} className={`${toggleClass}`} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
         <div className={`${collapseClass}`} id="navbarResponsive">
           <ul className="navbar-nav mr-auto">
-            <NavLink onClick={openNavbar} to={'/'} className="nav-link"> Home </NavLink >
-            <NavLink onClick={openNavbar} to={'/about'} className="nav-link">About</NavLink >
-            <NavLink onClick={openNavbar} to={'/ar'} className="nav-link">AR</NavLink >
-            <NavLink onClick={openNavbar} to={'/webvr'} className="nav-link">WebVR</NavLink>
-            <NavLink onClick={openNavbar} to={'/experiences'} className="nav-link">Experiences</NavLink>
-            <NavLink onClick={openNavbar} to={'/projects'} className="nav-link">Projects</NavLink>
-            <NavLink onClick={openNavbar} to={'/models'} className="nav-link">Models</NavLink>
-            <NavLink onClick={openNavbar} to={'/contact'} className="nav-link">Contact</NavLink>
-            <NavLink onClick={openNavbar} to={'/presentations'} className="nav-link">Presentations</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/'} className="nav-link"> Home </NavLink >
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink >
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/ar'} className="nav-link">AR</NavLink >
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/webvr'} className="nav-link">WebVR</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/experiences'} className="nav-link">Experiences</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/projects'} className="nav-link">Projects</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/models'} className="nav-link">Models</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/contact'} className="nav-link">Contact</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/presentations'} className="nav-link">Presentations</NavLink>
             <a href="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'twitter']} aria-hidden="true" /></a>
             <a href="https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"> <FontAwesomeIcon pull="right" size="lg" icon={['fab', 'linkedin']} aria-hidden="true" /></a>
             <a href="https://github.com/dmayers340" aria-label="Github"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'github']} aria-hidden="true" /></a>
