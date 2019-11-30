@@ -40,7 +40,6 @@ export const SiteNavbar = (props) => {
         </button>
         <div className={`${collapseClass}`} id="navbarResponsive">
           <ul className="navbar-nav mr-auto">
-            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/'} className="nav-link"> Home </NavLink >
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink >
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/ar'} className="nav-link">AR</NavLink >
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/webvr'} className="nav-link">WebVR</NavLink>
