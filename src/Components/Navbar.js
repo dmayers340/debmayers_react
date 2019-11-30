@@ -21,7 +21,7 @@ import { Presentations } from './Presentations';
 export const SiteNavbar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const collapseClass = isOpen ? 'collapse navbar-collapse show' : 'collapse navbar-collapse' ;
+  const collapseClass = isOpen ? 'collapse navbar-collapse show' : 'collapse navbar-collapse';
   const toggleClass = isOpen ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
 
   return (
@@ -48,10 +48,12 @@ export const SiteNavbar = (props) => {
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/models'} className="nav-link">Models</NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/contact'} className="nav-link">Contact</NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/presentations'} className="nav-link">Presentations</NavLink>
-            <a href="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'twitter']} aria-hidden="true" /></a>
-            <a href="https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"> <FontAwesomeIcon pull="right" size="lg" icon={['fab', 'linkedin']} aria-hidden="true" /></a>
-            <a href="https://github.com/dmayers340" aria-label="Github"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'github']} aria-hidden="true" /></a>
-            <a href="https://sketchfab.com/debmayers24" aria-label="Sketchfab"><FontAwesomeIcon pull="right" size="lg" icon={faCube} aria-hidden="true" /></a>
+          </ul>
+          <ul className="navlist"> 
+            <li><a href="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon size="lg" icon={['fab', 'twitter']} aria-hidden="true" /></a></li>
+            <li><a href="https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"> <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} aria-hidden="true" /></a></li>
+            <li><a href="https://github.com/dmayers340" aria-label="Github"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'github']} aria-hidden="true" /></a></li>
+            <li><a href="https://sketchfab.com/debmayers24" aria-label="Sketchfab"><FontAwesomeIcon pull="right" size="lg" icon={faCube} aria-hidden="true" /></a></li>
           </ul>
         </div>
       </Navbar>

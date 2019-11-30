@@ -64,3 +64,10 @@ a {
 .skip-link:focus{
   top:0;
 }
+
+.navlist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
