@@ -1,5 +1,4 @@
 import React from 'react';
-import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import { Card, Col, Image, Jumbotron, Row } from 'react-bootstrap';
 
 export const Home = () => {
@@ -12,18 +11,7 @@ export const Home = () => {
                 </p>
             </Jumbotron>
             <Row>
-                <Col>
-                    <Card style={{ width: '20rem', height: '40rem', marginBottom: '1rem' }}>
-                        <Card.Body>
-                            <TwitterTimelineEmbed
-                                sourceType="profile"
-                                screenName="debmayers24"
-                                options={{height: 600}}
-                            />
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col>
+                <Col id="main" tabIndex={-1}>
                     <Card style={{ width: '20rem', height: '40rem', marginBottom: '1rem' }}>
                         <Card.Body>
                             <Card.Img variant="top" alt="Myself with VR headset on" src={process.env.PUBLIC_URL + '/img/self_vr_train.jpg'} />

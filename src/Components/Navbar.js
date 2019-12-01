@@ -26,6 +26,7 @@ export const SiteNavbar = (props) => {
 
   return (
     <>
+      <a class="skip-main" href="#main">Skip to main content</a>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="/" onClick={() => setIsOpen(!isOpen)}>
           <img
@@ -39,7 +40,7 @@ export const SiteNavbar = (props) => {
           <span className="navbar-toggler-icon" />
         </button>
         <div className={`${collapseClass}`} id="navbarResponsive">
-          <ul className="navbar-nav mr-auto">
+          <Nav className="mr-auto">
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink >
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/ar'} className="nav-link">AR</NavLink >
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/webvr'} className="nav-link">WebVR</NavLink>
@@ -48,7 +49,7 @@ export const SiteNavbar = (props) => {
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/models'} className="nav-link">Models</NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/contact'} className="nav-link">Contact</NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/presentations'} className="nav-link">Presentations</NavLink>
-          </ul>
+          </Nav>
           <ul className="navlist"> 
             <li><a href="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon size="lg" icon={['fab', 'twitter']} aria-hidden="true" /></a></li>
             <li><a href="https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"> <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} aria-hidden="true" /></a></li>

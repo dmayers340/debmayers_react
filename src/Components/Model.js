@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
-import { Link, Route } from 'react-router-dom';
 import { freestyleModels } from '../config/models.json';
-import { Project } from './Project';
 
 let currentExperience;
 let foundModel;
@@ -25,8 +23,7 @@ export const Model = ({match}) => {
 
             <Card key={match.params.name} style={{ width: '20rem', marginBottom: '1rem'}}>
                 <Card.Text>{currentExperience.description}</Card.Text>
-                <Link to={`projects/${currentExperience.name}`}>Go to the Project Link at {currentExperience.name}</Link> 
-                <Route path={`projects/:urlName`} exact component={Project} />
+                <a href={`https://debmayers.com/${currentExperience.projectUrl}`}>Go to the Project Link at {currentExperience.name}</a> 
             </Card>
                 {currentExperience.imageURLs.map(curr => (
                     <Card key={curr.imgAlt + curr.name} style={{ width: '20rem', marginBottom: '1rem' }}>
