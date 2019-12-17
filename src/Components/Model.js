@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card } from 'react-bootstrap';
 import { freestyleModels } from '../config/models.json';
 
@@ -6,13 +6,10 @@ let currentExperience;
 let foundModel;
 
 export const Model = ({match}) => {
-    console.log('match', match);
     freestyleModels.map(curr => {
-        console.log('crrent', curr);
         if(curr.urlName === match.params.name){
             currentExperience = curr;
             foundModel = true;
-            console.log(currentExperience);
         }
     });
     

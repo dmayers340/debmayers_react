@@ -1,21 +1,21 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Switch, Route, NavLink } from 'react-router-dom';
-import { Home } from './Home';
-import { About } from './About';
-import { Contact } from './Contact';
-import { ExperienceList } from './ExperienceList';
-import { ModelsList } from './ModelsList';
-import { Model } from './Model';
-import { ProjectInformation } from './ProjectInformation'
-import { ProjectList } from './ProjectList';
-import { Experience } from './Experience';
+import { Home } from '../Home';
+import { About } from '../About';
+import { Contact } from '../Contact';
+import { ExperienceList } from '../Lists/ExperienceList';
+import { ModelsList } from '../Lists/ModelsList';
+import { Model } from '../Model';
+import { ProjectInformation } from '../ProjectInformation'
+import { ProjectList } from '../Lists/ProjectList';
+import { Experience } from '../Experience';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCube } from "@fortawesome/free-solid-svg-icons";
-import { UnderConstruction } from './UnderConstruction';
-import { WebAR } from './WebAR';
-import { WebVR } from './WebVR';
-import { Presentations } from './Presentations';
+import { UnderConstruction } from '../Common/UnderConstruction';
+import { WebAR } from '../XR/WebAR';
+import { WebVR } from '../XR/WebVR';
+import { Presentations } from '../Lists/Presentations';
 
 
 export const SiteNavbar = (props) => {
@@ -26,7 +26,7 @@ export const SiteNavbar = (props) => {
 
   return (
     <>
-      <a class="skip-main" href="#main">Skip to main content</a>
+      <a className="skip-main" href="#main">Skip to main content</a>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="/" onClick={() => setIsOpen(!isOpen)}>
           <img
@@ -44,17 +44,19 @@ export const SiteNavbar = (props) => {
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink >
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/ar'} className="nav-link">AR</NavLink >
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/webvr'} className="nav-link">WebVR</NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/experiences'} className="nav-link">Experiences</NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/projects'} className="nav-link">Projects</NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/models'} className="nav-link">Models</NavLink>
+            <NavDropdown title="My Work" tabIndex={0}>
+              <NavDropdown.Item href="/presentations" onClick={() => setIsOpen(!isOpen)}>Presentations</NavDropdown.Item>
+              <NavDropdown.Item href="/models" onClick={() => setIsOpen(!isOpen)}>Models</NavDropdown.Item>
+              <NavDropdown.Item href="/projects" onClick={() => setIsOpen(!isOpen)}> XR Projects</NavDropdown.Item>
+              <NavDropdown.Item href="/experiences" onClick={() => setIsOpen(!isOpen)}>Experiences</NavDropdown.Item>
+            </NavDropdown>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/contact'} className="nav-link">Contact</NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/presentations'} className="nav-link">Presentations</NavLink>
           </Nav>
-          <ul className="navlist"> 
-            <li><a href="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon size="lg" icon={['fab', 'twitter']} aria-hidden="true" /></a></li>
-            <li><a href="https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"> <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} aria-hidden="true" /></a></li>
-            <li><a href="https://github.com/dmayers340" aria-label="Github"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'github']} aria-hidden="true" /></a></li>
-            <li><a href="https://sketchfab.com/debmayers24" aria-label="Sketchfab"><FontAwesomeIcon pull="right" size="lg" icon={faCube} aria-hidden="true" /></a></li>
+          <ul className="icons"> 
+            <li><a className="social-media-icon" href="https://twitter.com/debmayers24" aria-label="Twitter"><FontAwesomeIcon size="lg" icon={['fab', 'twitter']} aria-hidden="true" /></a></li>
+            <li><a className="social-media-icon" href="https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"><FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} aria-hidden="true" /></a></li>
+            <li><a className="social-media-icon" href="https://github.com/dmayers340" aria-label="Github"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'github']} aria-hidden="true" /></a></li>
+            <li><a className="social-media-icon" href="https://sketchfab.com/debmayers24" aria-label="Sketchfab"><FontAwesomeIcon pull="right" size="lg" icon={faCube} aria-hidden="true" /></a></li>
           </ul>
         </div>
       </Navbar>

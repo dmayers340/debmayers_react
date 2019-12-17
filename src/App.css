@@ -66,13 +66,19 @@ a {
   top:0;
 }
 
-.navlist {
+.social-media-icon {
+  color: #ffffff !important;
+}
+.icons{
   list-style: none;
   display: flex;
   flex-direction: row;
-  float: right;
+  justify-content: space-between;
 }
-
+.embed8-link {
+  color: #20399D !important;
+  text-decoration: underline !important;
+}
 a.skip-main {
   position:absolute;
   top:auto;

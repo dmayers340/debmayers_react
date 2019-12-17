@@ -1,7 +1,6 @@
 import React from 'react';
 import Unity, { UnityContent } from "react-unity-webgl";
 import { experiences } from '../config/debstuff.json';
-// import { CarrawburghExperience } from './CarrawburghExperience';
 
 let currentExperience;
 let unityContent;
@@ -39,10 +38,7 @@ export const Experience = (props) => {
         return (
             <Unity unityContent={unityContent} />
         )
-    } 
-    // else if(currentExperience.name === 'Carrawburgh'){
-    //     CarrawburghExperience();
-    //  } 
+    }
      else{
         return(
             <div>

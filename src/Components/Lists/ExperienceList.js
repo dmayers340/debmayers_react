@@ -1,8 +1,8 @@
 import React from 'react';
-import { experiences } from '../config/debstuff.json';
+import { experiences } from '../../config/debstuff.json';
 import { Card } from 'react-bootstrap';
 import { Link, Route } from 'react-router-dom';
-import { Experience } from './Experience';
+import { Experience } from '../Experience';
 
 export const ExperienceList = ({match}) => {
     return (

@@ -1,5 +1,7 @@
 import React from 'react';
 import 'aframe';
+require('aframe-teleport-controls');
+
 export const WebVR = () => {
     return (
         <div className = "arcode">
