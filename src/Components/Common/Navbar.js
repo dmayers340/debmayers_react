@@ -42,14 +42,14 @@ export const SiteNavbar = (props) => {
         <div className={`${collapseClass}`} id="navbarResponsive">
           <Nav className="mr-auto">
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink >
+            <NavDropdown role="tablist" title="My Work" tabIndex={0}>
+              <NavDropdown.Item role="tab" href="/presentations" onClick={() => setIsOpen(!isOpen)}>Presentations</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/models" onClick={() => setIsOpen(!isOpen)}>3D Modelling</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/projects" onClick={() => setIsOpen(!isOpen)}> XR Projects</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/experiences" onClick={() => setIsOpen(!isOpen)}>WebGL Experiences</NavDropdown.Item>
+            </NavDropdown>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/ar'} className="nav-link">AR</NavLink >
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/webvr'} className="nav-link">WebVR</NavLink>
-            <NavDropdown title="My Work" tabIndex={0}>
-              <NavDropdown.Item href="/presentations" onClick={() => setIsOpen(!isOpen)}>Presentations</NavDropdown.Item>
-              <NavDropdown.Item href="/models" onClick={() => setIsOpen(!isOpen)}>Models</NavDropdown.Item>
-              <NavDropdown.Item href="/projects" onClick={() => setIsOpen(!isOpen)}> XR Projects</NavDropdown.Item>
-              <NavDropdown.Item href="/experiences" onClick={() => setIsOpen(!isOpen)}>Experiences</NavDropdown.Item>
-            </NavDropdown>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/contact'} className="nav-link">Contact</NavLink>
           </Nav>
           <ul className="icons"> 

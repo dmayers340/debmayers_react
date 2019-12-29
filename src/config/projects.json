@@ -68,6 +68,14 @@
             "mainImageAlt": "Office Space",
             "mainImageUrl": "/img/Workplace.png",
             "urlName": "workplaceTraining"
+        },
+        {
+            "name": "Learning Amazon Sumerian",
+            "description":"Learning Amazon Sumerian to do a prototype of workplace bias training.",
+            "mainImageAlt": "Office Space",
+            "mainImageUrl": "/img/amazonsumerian.png",
+            "externalLink": "https://us-east-2.sumerian.aws/64ceb6051ef14a8892f1f91f280c56b6.scene",
+            "linkDescription": "See the current version of the training on the publicly hosted site."
         }
     ]
 }
