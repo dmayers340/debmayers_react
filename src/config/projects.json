@@ -2,9 +2,7 @@
     "vr_projects": [
         {
             "name": "Temple to Mithras at Carrawburgh",
-            "description": "Can people learn from a VR experience?",
-            "link": "https://www.youtube.com/embed/hHQXRn7V1MU",
-            "linkDescription": "See the video of the mithraeum experience",
+            "dissertationVideo": "https://www.youtube.com/embed/hHQXRn7V1MU",
             "mainImageAlt": "(Re)Created Temple to Mithras at Carrawburgh, displaying the nave with altars and the cult statue behind.",
             "mainImageUrl": "/img/mithraeum_reconstructed.jpg",
             "images": [

@@ -20,6 +20,18 @@ export const ProjectInformation = (props) => {
                     <p>Download The Dissertation <a href={currentExperience.document} download>Here.</a></p> 
                     ) : null 
                 }</h4>
+            <div className="row">
+                {currentExperience.dissertationVideo ? (
+                    <>
+                        <Card key='DissertationVideo' style={{ width: '20rem', marginBottom: '1rem' }}>
+                            <iframe src={currentExperience.dissertationVideo} name="Youtube Video of Temple to Mithras dissertation" height="100%"/>
+                        </Card>
+                        <Card key={currentExperience.mainImgAlt} style={{ width: '20rem', marginBottom: '1rem' }}>
+                            <Card.Img variant="top" src={currentExperience.mainImageUrl} alt={currentExperience.mainImageAlt} />
+                        </Card>
+                    </>
+                ) : null}
+            </div>
             <div className = "row">
                 {currentExperience.video ? (
                     <video width="400" controls>

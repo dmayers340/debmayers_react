@@ -1,6 +1,7 @@
 import React from 'react';
 import { Project } from '../Project';
-import { models, sketchfabModels } from '../../config/debstuff.json';
+import { models } from '../../config/debstuff.json';
+import { sketchfabModels } from '../../config/models.json'
 import '../../css/models.css';
 
 export const ModelsList = ({match}) => {
