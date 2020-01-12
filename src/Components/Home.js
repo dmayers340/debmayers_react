@@ -6,9 +6,6 @@ export const Home = () => {
         <>
             <Jumbotron fluid>
                 <Image src={process.env.PUBLIC_URL + '/img/debmayers.png'} alt= 'Deb Mayers logo with Colosseum and VR Headset' fluid />
-                <p>
-                    Hi! Welcome to my site. I'm currently rebuilding it using React. Apologies for the construction, but check back soon and it may be working again!
-                </p>
             </Jumbotron>
             <Row>
                 <Col id="main" tabIndex={-1}>
