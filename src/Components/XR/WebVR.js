@@ -8,7 +8,7 @@ export const WebVR = () => {
             <h1>Web VR example</h1>
             <a-scene physics="debug: true">
             <a-assets>
-                <a-asset-item id="carrawburgh" src="models/carrawburgh.gltf" />
+                <a-asset-item id="carrawburgh" src="models/carrawburgh/carrawburgh.gltf" />
             </a-assets>
             <a-sky color="#ECECEC"></a-sky>
             <a-entity id="cameraRig">

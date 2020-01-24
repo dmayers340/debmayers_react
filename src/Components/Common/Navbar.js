@@ -16,7 +16,7 @@ import { UnderConstruction } from '../Common/UnderConstruction';
 import { WebAR } from '../XR/WebAR';
 import { WebVR } from '../XR/WebVR';
 import { Presentations } from '../Lists/Presentations';
-
+import { CV } from '../XR/CV';
 
 export const SiteNavbar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -42,6 +42,7 @@ export const SiteNavbar = (props) => {
         <div className={`${collapseClass}`} id="navbarResponsive">
           <Nav className="mr-auto">
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink >
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/cv'} className="nav-link">CV</NavLink >
             <NavDropdown role="tablist" title="My Work" tabIndex={0}>
               <NavDropdown.Item role="tab" href="/presentations" onClick={() => setIsOpen(!isOpen)}>Presentations</NavDropdown.Item>
               <NavDropdown.Item role="tab" href="/models" onClick={() => setIsOpen(!isOpen)}>3D Modelling</NavDropdown.Item>
@@ -65,6 +66,7 @@ export const SiteNavbar = (props) => {
         <Route exact path='/' component={Home} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/cv' component={CV} />
         <Route exact path='/experiences' component={ExperienceList} />
         <Route path='/experiences/:name' render={Experience} />
         <Route exact path='/models' component={ModelsList} />
