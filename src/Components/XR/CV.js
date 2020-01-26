@@ -72,11 +72,11 @@ export const CV = () => {
                     <a-gltf-model src="models/mural/mural.glb" scale=".09 .09 .09" position="2.476 1.083 -5.547" rotation="4.645 0 0"></a-gltf-model>
                     <a-gltf-model src="models/lion/lion.glb" scale=".05 .05 .05" position="21.85 1.771 5.908" rotation="-22.9 73.96 -93"></a-gltf-model>
                     <a-gltf-model src="models/vase/vase.glb" position="-5.98 0 -3.841" rotation="23.4 59.02 -89.45" scale="0.2 0.2 0.2"></a-gltf-model>
-                    <a-gltf-model src="models/prima-porta/PrimaPorta.glb" scale="0.1 0.1 0.1" position="-4.74 0.843 -7.015" rotation="0 104 -88.17"></a-gltf-model>
                     <a-gltf-model src="models/building/argyleWithExtraBuildingsAndStreet.glb" position="-11.8 0.084 6.510" rotation="0 90 0" scale="0.020 0.020 0.020"></a-gltf-model>
                     <a-gltf-model src="models/mithras/mithras.glb" position="0 0 -7.172" rotation="0 0 -91.72" scale="0.1 0.1 0.1"></a-gltf-model>
+                    <a-gltf-model src="models/mithraeum/decimatedMithraeum.glb" gltf-model="models/mithraeum/decimatedMithraeum.glb" scale="0.4 0.4 0.4" position="-23.375 -5.09463 27.897" rotation="-27.32664908096948 -92.48971207899314 12.89613405280457"></a-gltf-model>           
+                    <a-gltf-model src="models/prima-porta/PrimaPortaGLB.glb" scale="0.1 0.1 0.1" position="-4.74 0.843 -7.015" rotation="0 104 -88.17"></a-gltf-model>                
                 </a-entity>
-              
             </a-scene>
         </div>
     )
