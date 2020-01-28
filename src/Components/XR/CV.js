@@ -63,8 +63,8 @@ export const CV = () => {
                 </a-entity>
 
                 <a-entity id="WorkExperience">
+                    <a-text color="black" text="" position="-7.74817 4.5 12.06549" rotation="0 180 0" scale="2 2 2" value="Work Experience"></a-text>
                     <a-entity id="jpmorgan">
-                        <a-text color="black" text="" position="-13.03488 4.5 12.06549" rotation="0 180 0" scale="2 2 2" value="Work Experience"></a-text>
                         <a-plane color="white" material="" position="-5.78429 1.97804 11.97072" rotation="0 180 0" scale="6 4 2" geometry=""></a-plane>
                         <a-text color="black" text="" position="-3.42677 3.5 11.7939" rotation="0 180 0" value="JPMorgan, Software Engineer, July 2018-present"></a-text>
                         <a-text color="black" text="" position="-3.42677 2.95568 11.7939" rotation="0 180 0" value="--Collaborated in a Scrum team using Electron, Node.js, and React to create a client facing application."></a-text>
@@ -81,7 +81,19 @@ export const CV = () => {
                         <a-text color="black" text="" position="-9.53677 1.42577 11.7939" rotation="0 180 0" value="--Responsible for the recruitment of people for studies, organizing and scheduling appointments, and conducting interviews with participants."></a-text>
                         <a-text color="black" text="" position="-9.53677 0.52865 11.7939" rotation="0 180 0" value="--Wrote a literature review on Individual Differences to understand the factors that relate to decision making."></a-text>
                     </a-entity>
-                    <a-plane color="white" material="" position="-18.73232 1.1 11.97072" rotation="0 180 0" scale="6 2 2" geometry=""></a-plane>    
+                    <a-entity>
+                        <a-plane color="white" material="" position="-18.58128 3.24243 11.97072" rotation="0 180 0" scale="6 6.5 1" geometry=""></a-plane>
+                        <a-text color="black" text="" rotation="0 180 0" position="-15.66291 6 11.97072" value="Target, TGIFriday Durham, North Carolina 2015-2016"></a-text>
+                        <a-text color="black" text="" rotation="0 180 0" position="-15.65014 5.49781 11.97072" value="Pink Smock Gift Shops, Durham, North Carolina 2012-2013"></a-text>
+                        <a-text color="black" text="" rotation="0 180 0" position="-15.65014 4.87017 11.97072" value="Village One Stop Gas Station and Road Runner Drive In Kelliher, Minnesota 2009-2011, Seasonally 2011-2013"></a-text>
+                        <a-text color="black" text="" rotation="0 180 0" position="-15.67568 4.25092 11.97072" value="Duke University OIT, Durham, North Carolina September- December 2011"></a-text>
+                        <a-text color="black" text="" rotation="0 180 0" position="-16.22486 3.5 11.97072" value="-- Communicated with consumers, managers, and team members daily."></a-text> 
+                        <a-text color="black" text="" rotation="0 180 0" position="-16.19847 2.95 11.97072" value="-- Worked in a team to stay on schedule and maintain standards of each establishment."></a-text>
+                        <a-text color="black" text="" rotation="0 180 0" position="-16.17207 2.15 11.97072" value="-- Maintained and served a loyal customer base by preserving a high level of energy and providing excellent customer service."></a-text> 
+                        <a-text color="black" text="" rotation="0 180 0" position="-16.10169 1.5 11.97072" value="-- Increased sales by interacting with the consumer and keeping fresh products in stock."></a-text>
+                        <a-text color="black" text="" rotation="0 180 0" position="-16.02251 1 11.97072" value="-- Advised customers on which product was the most suitable for their needs."></a-text>
+                        <a-text color="black" text="" rotation="0 180 0" position="-16.0401 0.5 11.97072" value="-- Assisted students with issues related to hardware and software on individual or University devices."></a-text>                    </a-entity>
+                
                 </a-entity>
                 <a-entity>
                     <a-text color="black" position="-3.62 0.949 -5.669" value="Work in progress, Mayers CV. Walk around to see some of the work that I have done."></a-text>
