@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="/dist/bundle.js"></script>
+
+    <title>AR.js Augmented Experiences</title>
+  </head>
+
+  <body style="margin : 0px; overflow: hidden;">
+    <button>Go Back</button>
+    <a-scene embedded arjs="patternRatio: 0.90">
+        <a-assets>
+            <a-asset-item id="crate-obj" src="../../../public/models/sciOBJ.obj"></a-asset-item>
+            <a-asset-item id="crate-mtl" src="../../../public/models/sciOBJ.mtl"></a-asset-item>
+          </a-assets>
+        
+      <a-marker
+        type="pattern"
+        preset="custom"
+        url="/patterns/science-center-logo.patt"
+      >
+        <a-obj-model src="#crate-obj" mtl="#crate-mtl"></a-obj-model>
+      </a-marker>      
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
