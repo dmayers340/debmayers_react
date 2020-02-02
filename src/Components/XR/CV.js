@@ -121,8 +121,8 @@ export const CV = () => {
                         <a-text color="black" text="" position="-8.60247 13.06582 32.22485" rotation="0 -180 0" value="Carrawburgh Mithraeum, Photogrammetry model and 3DS model" scale="3 3 3"></a-text>
                         <a-plane position="-15.90141 13.06582 32.93723" rotation="0 -180 0" scale="15 2 5" material="" geometry=""></a-plane>
                     </a-entity>
-                   
-                    <a-gltf-model src="models/mithraeum/mithraeumGLB.glb" gltf-model="models/mithraeum/mithraeumGLB.glb" position="-16.57273 -1.68697 28.88116" scale="0.02 0.02 0.02" rotation="0 87.91 0"></a-gltf-model>
+                    <a-gltf-model src="models/mithraeum/decimatedMithraeum.glb" gltf-model="models/mithraeum/decimatedMithraeum.glb" scale="0.4 0.4 0.4" position="-23.375 -5.09463 29.08174" rotation="-27.32664908096948 -92.48971207899314 12.89613405280457"></a-gltf-model>
+                    <a-gltf-model src="models/mithraeum/mithraeumGLB.glb" gltf-model="models/mithraeum/mithraeumGLB.glb" position="-16.57273 -1.83976 26.03592" scale="0.03 0.03 0.03" rotation="-0.14553127996322912 87.91521704266864 -3.990651043086184"></a-gltf-model>
                     <a-plane position="-15.18407 0.10028 36.25004" rotation="0 90 0" scale="6 5 5" material="" geometry=""></a-plane>
                     <a-text color="black" text="" position="-15.00043 1.35965 39.17881" rotation="0 90 0" value="Carrawburgh Mithraeum, Photogrammetry model and 3DS model"></a-text>
                 </a-entity>
