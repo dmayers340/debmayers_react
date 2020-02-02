@@ -39,24 +39,24 @@ export const CV = () => {
                 <a-text color="black" position="11.31 2.5 11.480" rotation="0 180 0" scale="2 2 2" value="Education"></a-text>
                 <a-entity id="education">
                     <a-entity>
-                        <a-image src="img/DukeChapel.jpg" material="" position="-0.03772 1.11 11.73946" rotation="0 180 0" scale="1.5 2 2" geometry=""></a-image>
-                        <a-text color="black" position="4.154 1.5 11.480" rotation="0 180 0" value="Duke University 2011-2015"></a-text>
-                        <a-text color="black" position="4.844 1 11.480" rotation="0 180 0" value="Bachelor of Arts, Classical Civilization"></a-text>
-                        <a-text color="black" position="5.259 0.5 11.480" rotation="0 180 0" value="Certificate, Markets and Management Studies"></a-text>
+                        <a-image src="img/DukeChapel.jpg" material="" position="0.10217 1.11 11.902" rotation="0 180 0" scale="1.5 2 1" geometry=""></a-image>
+                        <a-text color="black" text="" position="4.154 1.5 11.90903" rotation="0 180 0" value="Duke University 2011-2015"></a-text>
+                        <a-text color="black" text="" position="4.8515 1.14179 11.90869" rotation="0 180 0" value="Bachelor of Arts, Classical Civilization"></a-text>
+                        <a-text color="black" text="" position="5.35845 0.81224 11.91593" rotation="0 180 0" value="Certificate, Markets and Management Studies"></a-text>
                         <a-plane color="white" position="3.096 1.110 11.923" rotation="0 180 0" scale="6 2 2"></a-plane>
                         <a-image src="img/kvilleGraduation.JPG" material="" position="6.07146 1.11 11.8814" rotation="0 180 0" scale="1.5 2 2" geometry=""></a-image>
                     </a-entity>
                     <a-entity>
-                        <a-text color="black" position="11.31 1.5 11.480" rotation="0 180 0" value="University of Glasgow 2016-2017"></a-text>
-                        <a-text color="black" position="10.77 1 11.480" rotation="0 180 0" value="MLitt, Ancient Cultures"></a-text>
-                        <a-text color="black" position="11.75 0.6 11.480" rotation="0 180 0" value="Dissertation: Religious Landscape of Carrawburgh, Class Representative"></a-text>
+                        <a-text color="black" position="11.31 1.5 11.91593" rotation="0 180 0" value="University of Glasgow 2016-2017"></a-text>
+                        <a-text color="black" text="" position="11.04194 1.19274 11.91593" rotation="0 180 0" value="MLitt, Ancient Cultures"></a-text>
+                        <a-text color="black" text="" position="12.03327 0.77006 11.91593" rotation="0 180 0" value="Dissertation: Religious Landscape of Carrawburgh, Class Representative"></a-text>
                         <a-plane color="white" position="9.707 1.110 11.923" rotation="0 180 0" scale="6 2 2"></a-plane>
                         <a-image src="img/UniGlasgowFront.JPG" material="" position="20.22498 1.11 11.8814" rotation="0 180 0" scale="1.5 2 2" geometry=""></a-image>
                     </a-entity>
                     <a-entity>
-                        <a-text color="black" position="18.77 1.5 11.923" rotation="0 180 0" value="University of Glasgow 2017-2018"></a-text>
-                        <a-text color="black" position="18.48 1 11.923" rotation="0 180 0" value="MSc, Information Technology"></a-text>
-                        <a-text color="black" position="18.85 0.5 11.923" rotation="0 180 0" value="Dissertation: Remembering Mithras: Can VR be used to learn about the past?"></a-text>
+                        <a-text color="black" text="" position="18.3505 1.5 11.923" rotation="0 180 0" value="University of Glasgow 2017-2018"></a-text>
+                        <a-text color="black" text="" position="18.18328 1.04867 11.923" rotation="0 180 0" value="MSc, Information Technology"></a-text>
+                        <a-text color="black" text="" position="19.06992 0.55101 11.923" rotation="0 180 0" value="Dissertation: Remembering Mithras: Can VR be used to learn about the past?"></a-text>
                         <a-plane color="white" position="16.66 1.110 11.991" rotation="0 180 0" scale="6 2 2"></a-plane>
                         <a-image src="img/GlasgowTower.jpg" material="" position="13.15495 1.11 11.8814" rotation="0 180 0" scale="1.5 2 2" geometry=""></a-image>
                     </a-entity>
@@ -96,7 +96,7 @@ export const CV = () => {
                 
                 </a-entity>
                 <a-entity>
-                    <a-text color="black" position="-3.62 0.949 -5.669" value="Work in progress, Mayers CV. Walk around to see some of the work that I have done."></a-text>
+                    <a-text color="black" text="" position="-4.02045 1.81794 -9.00101" value="Work in progress, Mayers CV. Walk around to see some of the work that I have done."></a-text>
                 </a-entity>
 
                 <a-entity>
@@ -108,15 +108,21 @@ export const CV = () => {
                     <a-gltf-model src="models/carrawburgh/carrawburgh.gltf" scale="0.01 0.01 0.01" position="0 0 -44.87"></a-gltf-model>
                     <a-gltf-model src="models/mural/mural.glb" scale=".09 .09 .09" position="2.476 1.083 -5.547" rotation="4.645 0 0"></a-gltf-model>
                     <a-gltf-model src="models/lion/lion.glb" gltf-model="models/lion/lion.glb" scale="0.05 0.05 0.05" position="20.17056 1.80176 6.03387" rotation="-22.900000000000002 73.96 -93"></a-gltf-model>
-                    <a-gltf-model src="models/lion/fountainBase.glb" gltf-model="models/lion/fountainBase.glb" scale="3 3 3" position="19.1014 0.20223 7.07302" rotation="-0.1283425461093044 68.17223733805073 0.8989707805602616"></a-gltf-model>                    <a-gltf-model src="models/vase/vase.glb" position="-5.98 0 -3.841" rotation="23.4 59.02 -89.45" scale="0.2 0.2 0.2"></a-gltf-model>
+                    <a-gltf-model src="models/lion/fountainBase.glb" gltf-model="models/lion/fountainBase.glb" scale="3 3 3" position="19.1014 0.20223 7.07302" rotation="-0.1283425461093044 68.17223733805073 0.8989707805602616"></a-gltf-model>                    
+                    <a-gltf-model src="models/vase/vase.glb" position="-5.98 0 -3.841" rotation="23.4 59.02 -89.45" scale="0.2 0.2 0.2"></a-gltf-model>
                     <a-gltf-model src="models/building/argyleWithExtraBuildingsAndStreet.glb" position="-11.8 0.084 6.510" rotation="0 90 0" scale="0.020 0.020 0.020"></a-gltf-model>
                     <a-gltf-model src="models/mithras/mithras.glb" position="0 0 -7.172" rotation="0 0 -91.72" scale="0.1 0.1 0.1"></a-gltf-model>
                     <a-gltf-model src="models/prima-porta/PrimaPortaGLB.glb" scale="0.1 0.1 0.1" position="-4.74 0.843 -7.015" rotation="0 104 -88.17"></a-gltf-model>
                 </a-entity>
 
                 <a-entity id="mithraeum">
-                    <a-gltf-model src="models/mithraeum/decimatedMithraeum.glb" gltf-model="models/mithraeum/decimatedMithraeum.glb" scale="0.4 0.4 0.4" position="-23.375 -5.09463 29.08174" rotation="-27.32664908096948 -92.48971207899314 12.89613405280457"></a-gltf-model>
-                    <a-gltf-model src="models/mithraeum/mithraeum-3ds.glb" gltf-model="models/mithraeum/mithraeum-3ds.glb" position="-16.57273 -1.68627 30.1039" scale="0.02 0.02 0.02" rotation="0 87.91 0"></a-gltf-model>
+                    <a-entity position="-13 14 10" animation="property: position; to: -13 -10 10; dur: 5000; easing: linear; loop: true" >
+                        <a-cone radius-bottom="1" geometry="radiusTop: 0" radius-top="0" position="-13.09613 12.06582 33.97992" color="blue" material="" scale="1 2 1" rotation="0 0 180"></a-cone>
+                        <a-text color="black" text="" position="-8.60247 13.06582 32.22485" rotation="0 -180 0" value="Carrawburgh Mithraeum, Photogrammetry model and 3DS model" scale="3 3 3"></a-text>
+                        <a-plane position="-15.90141 13.06582 32.93723" rotation="0 -180 0" scale="15 2 5" material="" geometry=""></a-plane>
+                    </a-entity>
+                   
+                    <a-gltf-model src="models/mithraeum/mithraeumGLB.glb" gltf-model="models/mithraeum/mithraeumGLB.glb" position="-16.57273 -1.68697 28.88116" scale="0.02 0.02 0.02" rotation="0 87.91 0"></a-gltf-model>
                     <a-plane position="-15.18407 0.10028 36.25004" rotation="0 90 0" scale="6 5 5" material="" geometry=""></a-plane>
                     <a-text color="black" text="" position="-15.00043 1.35965 39.17881" rotation="0 90 0" value="Carrawburgh Mithraeum, Photogrammetry model and 3DS model"></a-text>
                 </a-entity>
