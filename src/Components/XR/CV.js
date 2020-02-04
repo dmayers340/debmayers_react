@@ -6,6 +6,7 @@ export const CV = () => {
     return (
         <div className="a-frame-cv">
             <a-scene physics="debug: true">
+            <a-camera twoway-motion="speed: 35">...</a-camera>
                 <a-sky color="#ECECEC"></a-sky>
                 <a-entity id="cameraRig">
                     <a-entity id="head" camera wasd-controls look-controls></a-entity>
@@ -92,20 +93,20 @@ export const CV = () => {
                         <a-text color="black" text="" rotation="0 180 0" position="-16.17207 2.15 11.97072" value="-- Maintained and served a loyal customer base by preserving a high level of energy and providing excellent customer service."></a-text> 
                         <a-text color="black" text="" rotation="0 180 0" position="-16.10169 1.5 11.97072" value="-- Increased sales by interacting with the consumer and keeping fresh products in stock."></a-text>
                         <a-text color="black" text="" rotation="0 180 0" position="-16.02251 1 11.97072" value="-- Advised customers on which product was the most suitable for their needs."></a-text>
-                        <a-text color="black" text="" rotation="0 180 0" position="-16.0401 0.5 11.97072" value="-- Assisted students with issues related to hardware and software on individual or University devices."></a-text>                    </a-entity>
+                        <a-text color="black" text="" rotation="0 180 0" position="-16.0401 0.5 11.97072" value="-- Assisted students with issues related to hardware and software on individual or University devices."></a-text>                    
+                    </a-entity>
                 
                 </a-entity>
                 <a-entity>
-                    <a-text color="black" text="" position="-4.02045 1.81794 -9.00101" value="Work in progress, Mayers CV. Walk around to see some of the work that I have done."></a-text>
+                    <a-text color="white" text="" position="-4.02045 1.35125 -8.42117" value="Work in progress, Mayers CV. Walk around to see some of the work that I have done."></a-text>               
                 </a-entity>
-
                 <a-entity>
                     <a-text color="black" rotation="0 -90 0" position="8.878 2.160 -4.067" value="Interactable Keyboard."></a-text>
                     <a-video src="videos/interactableKeyboard.mp4" width="2" height="1" position="8.878 1 -3.114" rotation="0 90 0" scale="2 2 2"></a-video>
                 </a-entity>
 
                 <a-entity id="gltf-models">
-                    <a-gltf-model src="models/carrawburgh/carrawburgh.gltf" scale="0.01 0.01 0.01" position="0 0 -44.87"></a-gltf-model>
+                    <a-gltf-model src="models/carrawburgh/workingOnHQ.glb" scale="0.01 0.01 0.01" position="0 0 -44.87"></a-gltf-model>
                     <a-gltf-model src="models/mural/mural.glb" scale=".09 .09 .09" position="2.476 1.083 -5.547" rotation="4.645 0 0"></a-gltf-model>
                     <a-gltf-model src="models/lion/lion.glb" gltf-model="models/lion/lion.glb" scale="0.05 0.05 0.05" position="20.17056 1.80176 6.03387" rotation="-22.900000000000002 73.96 -93"></a-gltf-model>
                     <a-gltf-model src="models/lion/fountainBase.glb" gltf-model="models/lion/fountainBase.glb" scale="3 3 3" position="19.1014 0.20223 7.07302" rotation="-0.1283425461093044 68.17223733805073 0.8989707805602616"></a-gltf-model>                    
