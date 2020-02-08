@@ -44,6 +44,22 @@ export const Home = () => {
                         </Card.Body>
                     </Card>
                 </Col>
+                <Col>
+                    <Card style={{ width: '20rem', height: '40rem', marginBottom: '1rem' }}>
+                        <Card.Body>
+                            <Card.Title>Credits:</Card.Title>     
+                            <Card.Img variant="top" src={process.env.PUBLIC_URL + '/img/AddedRoofDecorations.png'} alt="3D model of the main building at the university of glasgow" />
+                            <Card.Text>
+                                <ul>
+                                    <li>
+                                        A-Frame Solar System textures found at <a href="https://www.solarsystemscope.com/textures/">Solar System Scope</a>
+                                    </li>
+                                </ul>
+                            </Card.Text>
+                            <Card.Img variant="bottom" src={process.env.PUBLIC_URL + '/img/mithraeum_reconstructed.jpg'} alt="Front of the Temple to Mithras at Carrawburgh" />
+                        </Card.Body>
+                    </Card>
+                </Col>
             </Row>
         </>
     )

@@ -17,6 +17,8 @@ import { WebAR } from '../XR/WebAR';
 import { WebVR } from '../XR/WebVR';
 import { Presentations } from '../Lists/Presentations';
 import { CV } from '../XR/CV';
+import Resume from '../Resume';
+import SolarSystem from '../XR/SolarSystem';
 
 export const SiteNavbar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -41,16 +43,20 @@ export const SiteNavbar = (props) => {
         </button>
         <div className={`${collapseClass}`} id="navbarResponsive">
           <Nav className="mr-auto">
-            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink >
-            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/cv'} className="nav-link">CV</NavLink >
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/resume'} className="nav-link">Resume</NavLink>
             <NavDropdown role="tablist" title="My Work" tabIndex={0}>
               <NavDropdown.Item role="tab" href="/presentations" onClick={() => setIsOpen(!isOpen)}>Presentations</NavDropdown.Item>
               <NavDropdown.Item role="tab" href="/models" onClick={() => setIsOpen(!isOpen)}>3D Modelling</NavDropdown.Item>
               <NavDropdown.Item role="tab" href="/projects" onClick={() => setIsOpen(!isOpen)}> XR Projects</NavDropdown.Item>
               <NavDropdown.Item role="tab" href="/experiences" onClick={() => setIsOpen(!isOpen)}>WebGL Experiences</NavDropdown.Item>
             </NavDropdown>
-            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/ar'} className="nav-link">AR</NavLink >
-            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/webvr'} className="nav-link">WebVR</NavLink>
+            <NavDropdown role="tablist" title="WebXR Content" name="WebXR Content" tabIndex={0}>
+              <NavDropdown.Item role="tab" href="/solarsystem" onClick={() => setIsOpen(!isOpen)}>Solar System</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/webvr" onClick={() => setIsOpen(!isOpen)}>Carrawburgh Roman Fort Recreation</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/ar" onClick={() => setIsOpen(!isOpen)}>AR</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/cv" onClick={() => setIsOpen(!isOpen)}>WebVR CV</NavDropdown.Item>
+            </NavDropdown>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/contact'} className="nav-link">Contact</NavLink>
           </Nav>
           <ul className="icons"> 
@@ -66,6 +72,7 @@ export const SiteNavbar = (props) => {
         <Route exact path='/' component={Home} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/resume' component={Resume} />
         <Route exact path='/cv' component={CV} />
         <Route exact path='/experiences' component={ExperienceList} />
         <Route path='/experiences/:name' render={Experience} />
@@ -74,6 +81,7 @@ export const SiteNavbar = (props) => {
         <Route path='/projects/:name' render={ProjectInformation} />
         <Route exact path='/ar' component={WebAR} />
         <Route exact path='/webvr' component={WebVR} />
+        <Route exact path="/solarsystem" component={SolarSystem} />
         <Route exact path='/projects' component={ProjectList} />
         <Route exact path='/presentations' component={Presentations} />
         <Route component={UnderConstruction} />
