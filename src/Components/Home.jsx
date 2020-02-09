@@ -15,6 +15,7 @@ export const Home = () => {
                             <Card.Text>
                                 Download my Mithraeum APK for the Oculus Quest< a href="https://drive.google.com/open?id=1MpdORGaxbUzkkAsqrUg4txP_kA3ZMvrS"> here! </a>
                             </Card.Text>
+                            <Card.Img variant="bottom" src={process.env.PUBLIC_URL + '/img/Arran_v03.jpg'} alt="Goatfell mountain on the Isle of Arran viewed from the ferry approaching the island" />
                         </Card.Body>
                     </Card>
                 </Col>
@@ -56,7 +57,7 @@ export const Home = () => {
                                     </li>
                                 </ul>
                             </Card.Text>
-                            <Card.Img variant="bottom" src={process.env.PUBLIC_URL + '/img/mithraeum_reconstructed.jpg'} alt="Front of the Temple to Mithras at Carrawburgh" />
+                            <Card.Img variant="bottom" src={process.env.PUBLIC_URL + '/img/altar3_color.png'} alt="Altar from the carrawburgh temple to mithras, left side as it looks today, right side is my 3d painting/reconstruction" />
                         </Card.Body>
                     </Card>
                 </Col>

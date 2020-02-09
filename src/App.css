@@ -68,12 +68,15 @@ a {
 
 .social-media-icon {
   color: #ffffff !important;
+  padding-left: 5px;
 }
 .icons{
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0;
+  padding:0;
 }
 .embed8-link {
   color: #20399D !important;

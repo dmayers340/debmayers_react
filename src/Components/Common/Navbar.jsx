@@ -11,8 +11,8 @@ import { ProjectInformation } from '../ProjectInformation'
 import { ProjectList } from '../Lists/ProjectList';
 import { Experience } from '../Experience';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCube } from "@fortawesome/free-solid-svg-icons";
-import { UnderConstruction } from '../Common/UnderConstruction';
+import { faCube, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { UnderConstruction } from './UnderConstruction';
 import { WebAR } from '../XR/WebAR';
 import { WebVR } from '../XR/WebVR';
 import { Presentations } from '../Lists/Presentations';
@@ -64,6 +64,7 @@ export const SiteNavbar = (props) => {
             <li><a className="social-media-icon" href="https://www.linkedin.com/in/deborahmayers/" aria-label="LinkedIn"><FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} aria-hidden="true" /></a></li>
             <li><a className="social-media-icon" href="https://github.com/dmayers340" aria-label="Github"><FontAwesomeIcon pull="right" size="lg" icon={['fab', 'github']} aria-hidden="true" /></a></li>
             <li><a className="social-media-icon" href="https://sketchfab.com/debmayers24" aria-label="Sketchfab"><FontAwesomeIcon pull="right" size="lg" icon={faCube} aria-hidden="true" /></a></li>
+            <li> <a className="social-media-icon" href="mailto:dmayers340@gmail.com.com?Subject=Hello%20Contacting%20After%20Visiting%20Your%20Website"><FontAwesomeIcon pull="right" size="lg" icon={faEnvelope} aria-hidden="true" /></a></li>
           </ul>
         </div>
       </Navbar>
