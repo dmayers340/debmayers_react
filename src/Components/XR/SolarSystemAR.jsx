@@ -5,7 +5,7 @@ const SolarSystemAR = () => {
         <iframe
             frameBorder="0"
             style={{ width: "100%", height: "100%"}}
-            title="AR content"
+            title="Solar System in AR"
             src="/ar/SolarSystem.html"
          />
     );

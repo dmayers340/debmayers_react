@@ -11,7 +11,7 @@ export const Project = (props) => {
             <Card.Body>
                     <Card.Title>{project.name}</Card.Title>
                     <iframe 
-                        title ={project.name} 
+                        title={project.name} 
                         src={project.iframesrc} 
                         alt={project.imgAlt} 
                         frameBorder="0" 

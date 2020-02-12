@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, Image, Jumbotron, Row } from 'react-bootstrap';
+import { Card, Col, Image, Jumbotron, Row, ListGroup } from 'react-bootstrap';
 
 export const Home = () => {
     return (
@@ -50,13 +50,11 @@ export const Home = () => {
                         <Card.Body>
                             <Card.Title>Credits:</Card.Title>     
                             <Card.Img variant="top" src={process.env.PUBLIC_URL + '/img/AddedRoofDecorations.png'} alt="3D model of the main building at the university of glasgow" />
-                            <Card.Text>
-                                <ul>
-                                    <li>
-                                        A-Frame Solar System textures found at <a href="https://www.solarsystemscope.com/textures/">Solar System Scope</a>
-                                    </li>
-                                </ul>
-                            </Card.Text>
+                            <ListGroup>
+                                <ListGroup.Item> 
+                                    A-Frame Solar System textures found at <a href="https://www.solarsystemscope.com/textures/">Solar System Scope</a>
+                                </ListGroup.Item>
+                            </ListGroup>
                             <Card.Img variant="bottom" src={process.env.PUBLIC_URL + '/img/altar3_color.png'} alt="Altar from the carrawburgh temple to mithras, left side as it looks today, right side is my 3d painting/reconstruction" />
                         </Card.Body>
                     </Card>
