@@ -16,16 +16,16 @@
     <button>Go Back</button>
     <a-scene embedded arjs="patternRatio: 0.90">
         <a-assets>
-            <a-asset-item id="sci-obj" src="../../../public/models/sciOBJ.obj"></a-asset-item>
-            <a-asset-item id="sci-mtl" src="../../../public/models/sciOBJ.mtl"></a-asset-item>
+            <a-asset-item id="sci-obj" src="../models/sciOBJ.obj"></a-asset-item>
+            <a-asset-item id="sci-mtl" src="../models/sciOBJ.mtl"></a-asset-item>
           </a-assets>
         
       <a-marker
         type="pattern"
         preset="custom"
-        url="/patterns/science-center-logo.patt"
+        url="../patterns/science-center-logo.patt"
       >
-        <a-obj-model src="#sci-obj" mtl="#sci-mtl"></a-obj-model>
+        <a-obj-model src="#sci-obj" mtl="#sci-mtl" scale="0.1 0.1 0.1"></a-obj-model>
       </a-marker>      
       <a-entity camera></a-entity>
     </a-scene>
