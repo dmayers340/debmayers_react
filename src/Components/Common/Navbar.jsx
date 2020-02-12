@@ -21,6 +21,7 @@ import Resume from '../Resume';
 import SolarSystem from '../XR/SolarSystem';
 import SolarSystemAR from '../XR/SolarSystemAR';
 import SciCenter from '../XR/SciCenter';
+import Mithraeum from '../XR/Mithraeum';
 
 export const SiteNavbar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -54,12 +55,14 @@ export const SiteNavbar = (props) => {
               <NavDropdown.Item role="tab" href="/experiences" onClick={() => setIsOpen(!isOpen)}>WebGL Experiences</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown role="tablist" title="WebXR Content" name="WebXR Content" tabIndex={0}>
-              <NavDropdown.Item role="tab" href="/solarsystem" onClick={() => setIsOpen(!isOpen)}>Solar System</NavDropdown.Item>
-              <NavDropdown.Item role="tab" href="ar/solarsystem" onClick={() => setIsOpen(!isOpen)}>AR Solar System</NavDropdown.Item>
-              <NavDropdown.Item role="tab" href="ar/science" onClick={() => setIsOpen(!isOpen)}>Science Centre Map</NavDropdown.Item>
-              <NavDropdown.Item role="tab" href="/webvr" onClick={() => setIsOpen(!isOpen)}>Carrawburgh Roman Fort Recreation</NavDropdown.Item>
               <NavDropdown.Item role="tab" href="/ar" onClick={() => setIsOpen(!isOpen)}>AR</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/ar/mithraeum" onClick={() => setIsOpen(!isOpen)}>AR Mithraeum</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/ar/solarsystem" onClick={() => setIsOpen(!isOpen)}>AR Solar System</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/ar/science" onClick={() => setIsOpen(!isOpen)}>AR Science Centre Map</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/solarsystem" onClick={() => setIsOpen(!isOpen)}>Solar System</NavDropdown.Item>
+              <NavDropdown.Item role="tab" href="/webvr" onClick={() => setIsOpen(!isOpen)}>Carrawburgh Roman Fort Recreation</NavDropdown.Item>
               <NavDropdown.Item role="tab" href="/cv" onClick={() => setIsOpen(!isOpen)}>WebVR CV</NavDropdown.Item>
+
             </NavDropdown>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/contact'} className="nav-link">Contact</NavLink>
           </Nav>
@@ -91,6 +94,7 @@ export const SiteNavbar = (props) => {
         <Route exact path='/presentations' component={Presentations} />
         <Route exact path='/ar/solarsystem' component={SolarSystemAR} />
         <Route exact path='/ar/science' component={SciCenter} />
+        <Route exact path='/ar/mithraeum' component={Mithraeum} />
 
         <Route component={UnderConstruction} />
       </Switch>
