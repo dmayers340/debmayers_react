@@ -34,6 +34,7 @@ export const About = () => {
                                 <Card.Text>{project.description}</Card.Text>
                             </Card>  
                         ))}
+                        <Card.Img variant="bottom" src="img/AddedRoofDecorations.png" alt="3D modeled unviersity of Glasgow building"></Card.Img>
                     </Card.Body>
                 </Card>
             </Col> 
@@ -41,7 +42,7 @@ export const About = () => {
                 <Card style={{ width: '20rem', height: '70rem', marginBottom: '1rem' }}>
                     <Card.Body>
                         <Card.Title>Education</Card.Title>
-                        <Card.Img variant="top" src='img/Canterbury_Cathedral_v01.jpg' alt='Canterbury Cathedral' />
+                        <Card.Img variant="top" src='img/UniGlasgowFront.JPG' alt='Front of the main building at the University of Glasgow' />
                         {education.map(degree => (
                             <Card key = {degree.year+degree.degree}>
                                 <Card.Title>{degree.degree}</Card.Title>
@@ -49,6 +50,8 @@ export const About = () => {
                             <p>{degree.name}</p>
                             </Card>
                         ))}
+                        <Card.Img variant="bottom" src='img/DukeChapel.jpg' alt='Duke Chapel at Dusk' />
+
                     </Card.Body>
                 </Card>
             </Col>

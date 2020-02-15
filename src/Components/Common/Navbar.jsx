@@ -13,15 +13,15 @@ import { Experience } from '../Experience';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCube, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { UnderConstruction } from './UnderConstruction';
-import { WebAR } from '../XR/WebAR';
-import { WebVR } from '../XR/WebVR';
+import { WebAR } from '../XR/AR/WebAR';
+import { WebVR } from '../XR/VR/WebVR';
 import { Presentations } from '../Lists/Presentations';
-import { CV } from '../XR/CV';
+import { CV } from '../XR/VR/CV';
 import Resume from '../Resume';
-import SolarSystem from '../XR/SolarSystem';
-import SolarSystemAR from '../XR/SolarSystemAR';
-import SciCenter from '../XR/SciCenter';
-import Mithraeum from '../XR/Mithraeum';
+import SolarSystem from '../XR/VR/SolarSystem';
+import SolarSystemAR from '../XR/AR/SolarSystemAR';
+import SciCenter from '../XR/AR/SciCenter';
+import Mithraeum from '../XR/AR/Mithraeum';
 
 export const SiteNavbar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -48,20 +48,22 @@ export const SiteNavbar = (props) => {
           <Nav className="mr-auto">
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/resume'} className="nav-link">Resume</NavLink>
-            <NavDropdown title="My Work" tabIndex={0}>
+            <NavDropdown title="Projects" tabIndex={0}>
               <NavDropdown.Item href="/presentations" onClick={() => setIsOpen(!isOpen)}>Presentations</NavDropdown.Item>
               <NavDropdown.Item href="/models" onClick={() => setIsOpen(!isOpen)}>3D Modelling</NavDropdown.Item>
-              <NavDropdown.Item href="/projects" onClick={() => setIsOpen(!isOpen)}> XR Projects</NavDropdown.Item>
+              <NavDropdown.Item href="/projects" onClick={() => setIsOpen(!isOpen)}>Unity XR Projects</NavDropdown.Item>
               <NavDropdown.Item href="/experiences" onClick={() => setIsOpen(!isOpen)}>WebGL Experiences</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="WebXR Content" name="WebXR Content" tabIndex={0}>
+            <NavDropdown title="WebAR Content" name="WebAR Content" tabIndex={0}>
               <NavDropdown.Item href="/ar" onClick={() => setIsOpen(!isOpen)}>AR</NavDropdown.Item>
               <NavDropdown.Item href="/ar/mithraeum" onClick={() => setIsOpen(!isOpen)}>AR Mithraeum</NavDropdown.Item>
               <NavDropdown.Item href="/ar/solarsystem" onClick={() => setIsOpen(!isOpen)}>AR Solar System</NavDropdown.Item>
               <NavDropdown.Item href="/ar/science" onClick={() => setIsOpen(!isOpen)}>AR Science Centre Map</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="WebXR Content" name="XR Content" tabIndex={0}>
               <NavDropdown.Item href="/solarsystem" onClick={() => setIsOpen(!isOpen)}>Solar System</NavDropdown.Item>
               <NavDropdown.Item href="/webvr" onClick={() => setIsOpen(!isOpen)}>Carrawburgh Roman Fort Recreation</NavDropdown.Item>
-              <NavDropdown.Item href="/cv" onClick={() => setIsOpen(!isOpen)}>WebVR CV</NavDropdown.Item>
+              <NavDropdown.Item href="/cv" onClick={() => setIsOpen(!isOpen)}>CV</NavDropdown.Item>
             </NavDropdown>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/contact'} className="nav-link">Contact</NavLink>
           </Nav>

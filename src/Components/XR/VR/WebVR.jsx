@@ -5,7 +5,7 @@ require('aframe-teleport-controls');
 export const WebVR = () => {
     return (
         <div className = "arcode">
-            <h1>Web VR example</h1>
+            <h1>Carrawburgh Roman Fort--Web VR example</h1>
             <a-scene physics="debug: true">
             <a-assets>
                 <a-asset-item id="carrawburgh" src="models/carrawburgh/carrawburgh.gltf" />
