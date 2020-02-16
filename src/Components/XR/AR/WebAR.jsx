@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 export const WebAR = () => {
     const script = document.createElement("script");
@@ -7,9 +8,12 @@ export const WebAR = () => {
 
     document.body.appendChild(script);
     return (
-        <div>
+        <>
+            <Helmet>
+                <title>AR Using Project 8th Wall Deb Mayers</title>
+            </Helmet>
             <h1>Testing WebAR</h1>
             <p><a className = "embed8-link" href = "https://8th.io/hykve" data-attached="true">Augmented Reality, (re)creation of the altars from the Carrawburgh Temple to Mithras</a></p>
-        </div>
+        </>
     )
 }

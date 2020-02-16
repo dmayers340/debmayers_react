@@ -1,10 +1,14 @@
 import React from 'react';
 import 'aframe';
+import { Helmet } from 'react-helmet';
 require('aframe-teleport-controls');
 
 export const WebVR = () => {
     return (
         <div className = "arcode">
+            <Helmet>
+                <title>Carrawburgh Roman Fort Using AFrame Deb Mayers</title>
+            </Helmet>
             <h1>Carrawburgh Roman Fort--Web VR example</h1>
             <a-scene physics="debug: true">
             <a-assets>

@@ -8,7 +8,7 @@
     />
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.6/aframe/build/aframe-ar.js"></script>
-    <title>AR.js Trial</title>
+    <title>Science Centre Map in AR</title>
   </head>
 
   <body style="margin : 0px; overflow: hidden;">
@@ -18,13 +18,15 @@
             <a-asset-item id="sci-mtl" src="../models/sciOBJ.mtl"></a-asset-item>
           </a-assets>
         
-      <a-marker
-        type="pattern"
-        preset="custom"
-        url="../patterns/science-center-logo.patt"
-      >
-        <a-obj-model src="#sci-obj" mtl="#sci-mtl" scale="0.01 0.01 0.01"></a-obj-model>
-      </a-marker>      
+          <a-marker 
+            type="pattern" 
+            preset="custom" 
+            url="../patterns/science-center-logo.patt" 
+          >
+            <a-obj-model 
+              rotation="-90 0 0" 
+              src="#sci-obj" mtl="#sci-mtl" scale="0.006 0.006 0.006" material="" obj-model=""></a-obj-model>
+          </a-marker>     
 
       <a-entity camera></a-entity>
     </a-scene>

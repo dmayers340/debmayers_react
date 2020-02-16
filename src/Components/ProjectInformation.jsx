@@ -1,6 +1,7 @@
 import React from 'react';
 import {vr_projects} from '../config/projects.json';
 import { Card } from 'react-bootstrap';
+import Helmet from 'react-helmet';
 
 let currentExperience;
 
@@ -15,6 +16,9 @@ export const ProjectInformation = (props) => {
     
     return(
         <>
+            <Helmet>
+                <title>{currentExperience.name} Deb Mayers</title>
+            </Helmet>
             <h1>{currentExperience.name}</h1>
             <h4> {currentExperience.document ? (
                     <p>Download The Dissertation <a href={currentExperience.document} download>Here.</a></p> 

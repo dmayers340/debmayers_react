@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { freestyleModels } from '../config/models.json';
+import { Helmet } from 'react-helmet';
 
 let currentExperience;
 let foundModel;
@@ -15,6 +16,9 @@ export const Model = ({match}) => {
     
     return foundModel ? (
         <>
+            <Helmet>
+                <title>{currentExperience.name} Deb Mayers</title>
+            </Helmet>
             <h1>{currentExperience.name}</h1>
             <div className = "row">
 
