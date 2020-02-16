@@ -44,6 +44,8 @@ export const WebVR = () => {
                 gearvr-controls="right">
             </a-entity> 
             <a-gltf-model src="#carrawburgh"></a-gltf-model>
+
+            <a-gltf-model src="#carrawburgh"></a-gltf-model>
         </a-scene>
         </div>
     )
