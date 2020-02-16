@@ -14,7 +14,7 @@ export const CV = () => {
             <div className="a-frame-cv">
                 <a-scene physics="debug: true">
                 <a-camera twoway-motion="speed: 35">...</a-camera>
-                    <a-sky color="#ECECEC"></a-sky>
+                <a-sky src="url(img/sky.jpg)"></a-sky>
                     <a-entity id="cameraRig">
                         <a-entity id="head" camera wasd-controls look-controls></a-entity>
                         <a-entity id="left-hand"
