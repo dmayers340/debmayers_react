@@ -119,6 +119,7 @@ export const CV = () => {
                         <a-gltf-model src="models/lion/fountainBase.glb" gltf-model="models/lion/fountainBase.glb" scale="3 3 3" position="19.1014 0.20223 7.07302" rotation="-0.1283425461093044 68.17223733805073 0.8989707805602616"></a-gltf-model>                    
                         <a-gltf-model src="models/vase/vase.glb" position="-5.98 0 -3.841" rotation="23.4 59.02 -89.45" scale="0.2 0.2 0.2"></a-gltf-model>
                         <a-obj-model src="models/building/buildingOBJ.obj" obj-model="" mtl="models/building/buildingOBJ.mtl" position="14.90054 0.084 -24.26609" rotation="0 -2.8848424984836947 0" scale="0.001 0.001 0.001" material=""></a-obj-model>                        <a-gltf-model src="models/mithras/mithras.glb" position="0 0 -7.172" rotation="0 0 -91.72" scale="0.1 0.1 0.1"></a-gltf-model>
+                        <a-obj-model src="models/building/centralStation.obj" obj-model="" mtl="models/building/centralStation.mtl" position="-0.27264 0.084 -25.78637" rotation="0 94.15128968487254 0" scale="0.03 0.03 0.03" material=""></a-obj-model>
                         <a-gltf-model src="models/prima-porta/PrimaPortaGLB.glb" scale="0.1 0.1 0.1" position="-4.74 0.843 -7.015" rotation="0 104 -88.17"></a-gltf-model>
                     </a-entity>
 
