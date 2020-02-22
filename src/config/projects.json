@@ -75,5 +75,21 @@
             "externalLink": "https://us-east-2.sumerian.aws/64ceb6051ef14a8892f1f91f280c56b6.scene",
             "linkDescription": "See the current version of the training on the publicly hosted site."
         }
+    ],
+    "documents": [
+        {
+            "linkDescription": "Go to the interactive version of my CV in a WebXR A-Frame Scene",
+            "link": "https://debmayers.com/cv",
+            "dataSource": "doc/MayersResume.pdf",
+            "documentDescription": "Download CV PDF",
+            "title": "Resume Document Deb Mayers"
+        },
+        {
+            "linkDescription": "Google Doc Version of Spatial Computing Paper",
+            "link": "https://docs.google.com/document/d/1lZgZZY9jo4a9f88HZX6wxbmy_W91ivBovpgGOdvgWSY/edit",
+            "dataSource": "doc/Mayers_SpatialComputingForOffices.pdf",
+            "documentDescription": "Download the Spatial Computing Paper PDF",
+            "title": "Spatial Computing Paper Deb Mayers"
+        }
     ]
 }

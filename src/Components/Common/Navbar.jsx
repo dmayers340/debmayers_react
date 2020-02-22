@@ -18,6 +18,7 @@ import { WebVR } from '../XR/VR/WebVR';
 import { Presentations } from '../Lists/Presentations';
 import { CV } from '../XR/VR/CV';
 import Resume from '../Resume';
+import Doc from '../Doc';
 import SolarSystem from '../XR/VR/SolarSystem';
 import SolarSystemAR from '../XR/AR/SolarSystemAR';
 import SciCenter from '../XR/AR/SciCenter';
@@ -48,6 +49,7 @@ export const SiteNavbar = (props) => {
           <Nav className="mr-auto">
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/about'} className="nav-link">About</NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} to={'/resume'} className="nav-link">Resume</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} to={'/spatialComputing'} className="nav-link">Spatial Computing Paper</NavLink>
             <NavDropdown title="Projects" tabIndex={0}>
               <NavDropdown.Item href="/presentations" onClick={() => setIsOpen(!isOpen)}>Presentations</NavDropdown.Item>
               <NavDropdown.Item href="/models" onClick={() => setIsOpen(!isOpen)}>3D Modelling</NavDropdown.Item>
@@ -117,6 +119,7 @@ export const SiteNavbar = (props) => {
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/about' component={About} />
         <Route exact path='/resume' component={Resume} />
+        <Route exact path='/spatialComputing' component={Doc} />
         <Route exact path='/cv' component={CV} />
         <Route exact path='/experiences' component={ExperienceList} />
         <Route path='/experiences/:name' render={Experience} />

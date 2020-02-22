@@ -1,18 +1,17 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import {documents } from '../config/projects.json';
 
-const Resume = () => {
-    return (
+const Resume = () => (
         <>
             <Helmet>
-                <title>Resume Document Deb Mayers</title>
+                <title>{documents[0].title}</title>
             </Helmet>
-            <a href="https://debmayers.com/cv">Go to the interactive version of my CV in a WebXR A-Frame Scene</a>
-            <object data="doc/MayersResume.pdf" type="application/pdf" width="100%" height="100%">
-                <p><a href="doc/MayersResume.pdf">Download CV</a></p>
+            <a href={documents[0].link}>{documents[0].linkDescription}</a>
+            <object data={documents[0].dataSource} type="application/pdf" width="100%" height="100%">
+                <p><a href={documents[0].dataSource}>{documents[0].documentDescription}</a></p>
             </object>
         </>
-    )
-}
+);
 
 export default Resume;
