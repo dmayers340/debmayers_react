@@ -56,13 +56,13 @@ export const SiteNavbar = (props) => {
               <NavDropdown.Item href="/projects" onClick={() => setIsOpen(!isOpen)}>Unity XR Projects</NavDropdown.Item>
               <NavDropdown.Item href="/experiences" onClick={() => setIsOpen(!isOpen)}>WebGL Experiences</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="WebAR Content" name="WebAR Content" tabIndex={0}>
+            <NavDropdown title="WebAR Projects" name="WebAR Projects" tabIndex={0}>
               <NavDropdown.Item href="/ar" onClick={() => setIsOpen(!isOpen)}>AR</NavDropdown.Item>
               <NavDropdown.Item href="/ar/mithraeum" onClick={() => setIsOpen(!isOpen)}>AR Mithraeum</NavDropdown.Item>
               <NavDropdown.Item href="/ar/solarsystem" onClick={() => setIsOpen(!isOpen)}>AR Solar System</NavDropdown.Item>
               <NavDropdown.Item href="/ar/science" onClick={() => setIsOpen(!isOpen)}>AR Science Centre Map</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="WebXR Content" name="XR Content" tabIndex={0}>
+            <NavDropdown title="WebXR Projects" name="XR Projects" tabIndex={0}>
               <NavDropdown.Item href="/solarsystem" onClick={() => setIsOpen(!isOpen)}>Solar System</NavDropdown.Item>
               <NavDropdown.Item href="/webvr" onClick={() => setIsOpen(!isOpen)}>Carrawburgh Roman Fort Recreation</NavDropdown.Item>
               <NavDropdown.Item href="/cv" onClick={() => setIsOpen(!isOpen)}>CV</NavDropdown.Item>

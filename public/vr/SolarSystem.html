@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <title>Solar System Deb Mayers</title>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene>
+        <a-entity cameraRig>
+            <a-entity id="left-hand"
+                teleport-controls="type:line;startEvents:teleportstart;endEvents:teleportend;collisionEntities:#floorLeft;hitEntity:#hintEntity;cameraRig:#cameraRig;maxLength:30;curveHitColor:#ff9999"
+                vive-controls="hand: left" oculus-touch-controls="hand: left" microsoft-motion-controls="hand: left"
+                daydream-controls="" gearvr-controls="">
+            </a-entity>
+
+            <a-entity id="right-hand"
+                teleport-controls="button:trigger;startEvents:teleportstart;endEvents:teleportend;collisionEntities:#floorRight;cameraRig:#cameraRig;teleportOrigin:#head;curveNumberPoints:50;curveLineWidth:0.015;curveHitColor:#9999ff;curveShootingSpeed:4"
+                vive-controls="hand:right" microsoft-motion-controls="hand: right" oculus-touch-controls="hand:right"
+                daydream-controls="" gearvr-controls="">
+            </a-entity>
+        </a-entity>
+        <a-entity camera="" position="-20 1.6 1.39589" wasd-controls="acceleration: 200" rotation="0 0 0"
+            look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+        <a-sky src="url(../img/SolarSystem/stars.jpg)"></a-sky>
+        <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
+
+        <a-entity position="-41 0 -50">
+            <a-sphere position="0 0 0" scale="10 10 10" src="url(../img/SolarSystem/sun.jpg)"
+                animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 35000; easing: linear; loop: true;">
+            </a-sphere>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 12000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 11" scale="0.2 0.2 0.2" rotation="0 141.08400000049733 0"
+                    src="url(../img/SolarSystem/mercury.jpg)" material=""
+                    animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 15000; easing: linear; loop: true"
+                    geometry="">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 15000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 13" scale="0.4 0.4 0.4" src="url(../img/SolarSystem/venus.jpg)"
+                    animation="property:rotation; from:0 0 0; to: 0 360 0; dur: 15000; easing: linear; loop: true">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 23000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 15" scale="0.5 0.5 0.5" src="url(../img/SolarSystem/earth.jpg)"
+                    animation="property:rotation; from:0 0 0; to: 0 360 0; dur: 15000; easing: linear; loop: true">
+                </a-sphere>
+
+                <a-entity position="0 0.2 15" rotation="0 0 0"
+                    animation="property: rotation; to: 0 360 0; dur: 4000; fill: forwards; easing: linear; loop: true;">
+                    <a-sphere position="0 0.3 0.3" scale="0.2 0.2 0.2" src="url(../img/SolarSystem/moon.jpg)"
+                        animation="property:rotation; from:0 0 0; to: 0 360 0; dur: 15000; easing: linear; loop: true">
+                    </a-sphere>
+                </a-entity>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 30000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 17" scale="0.3 0.3 0.3" src="url(../img/SolarSystem/mars.jpg)"
+                    animation="property:rotation; from:0 0 0; to: 0 360 0; dur: 15000; easing: linear; loop: true">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 30000; fill: forwards; easing: linear; loop: true">
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-13.17451 0 -1.24488" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-12.86022 0 1.1683" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-12.01311 0 6.59409" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-12 0 6.59409" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-12 0 6.59409" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-10 0 8" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-9 0 8.5" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-8.5 0 6.59409" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-8.01028 0 12" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-7.6 0 11" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-7 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-6.5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-6.1524 0 10.39093" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-5.5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-5.4 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-4.5 0 11" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-4 0 12" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-3 0 11.306" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-2 0 12" geometry=""></a-sphere>
+            </a-entity>
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 25000; fill: forwards; easing: linear; loop: true">
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="1 0 12"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="1.5 0 13"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="2.3 0 11"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="-0.980 0 12"></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-8.18789 0 5" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-8.18789 0 4.51764" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-3.50358 0 -12.27607" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="13.17451 0 -1.24488" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="12.86022 0 1.1683" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="12.01311 0 6.59409" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="12 0 6.59409" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="12 0 6.59409" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="10 0 8" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="9 0 8.5" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="8.5 0 6.59409" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="8.01028 0 12" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="7.6 0 11" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="7 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="6.5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="6.1524 0 10.39093" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-5.5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="5.4 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="4.5 0 11" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="4 0 12" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="3 0 11.306" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="2 0 12" geometry=""></a-sphere>
+            </a-entity>
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 20000; fill: forwards; easing: linear; loop: true">
+
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-3.50358 0 -12.27607" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="13.17451 0 -1.24488" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="12.86022 0 1.1683" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="12.01311 0 6.59409" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="12 0 6.59409" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="12 0 6.59409" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="10 0 8" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="9 0 8.5" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="8.5 0 6.59409" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="8.01028 0 12" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="7.6 0 11" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="7 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="6.5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="6.1524 0 10.39093" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-5.5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="5.4 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="4.5 0 11" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="4 0 12" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="3 0 11.306" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="2 0 12" geometry=""></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="1 0 -12"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="1.5 0 -13"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="2.3 0 -11"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="-0.980 0 -12"></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-8.18789 0 -5" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-8.18789 0 -4.51764" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="1 0 -12"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="1.5 0 -13"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="2.3 0 -11"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="-0.980 0 -12"></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-8.18789 0 -5" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-8.18789 0 -4.51764" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-10.48073 0 -5.9879" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="10.89355 0 -6.76588" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="11 0 -7" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="12.89355 0 -8" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="13 0 -5" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-9.8769 0 -9.30251" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-6.63237 0 -11.50535" geometry="">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 35000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 18" scale="0.15 0.15 0.15" src="url(../img/SolarSystem/ceres.jpg)"
+                    animation="property:rotation; from:0 0 0; to: 0 360 0; dur: 15000; easing: linear; loop: true">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 50000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 30" scale="5 5 5" src="url(../img/SolarSystem/jupiter.jpg)"
+                    animation="property:rotation; from:0 0 0; to: 0 360 0; dur: 2000; easing: linear; loop: true">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 57000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 35" scale="4 4 4" src="url(../img/SolarSystem/saturn.jpg)"
+                    animation="property:rotation; from:0 0 0; to: 0 360 0; dur: 15000; easing: linear; loop: true">
+                </a-sphere>
+                <a-entity geometry="primitive: torus; radius: 5; radiusTubular: 0.15; segmentsTubular: 25"
+                    material="src: ../img/SolarSystem/saturn-ring.png" position="0.09094 0 35" rotation="90 0 0"
+                    scale="1 1 0.1"></a-entity>
+                <a-entity geometry="primitive: torus; radius: 2.6; radiusTubular: 0.04; segmentsTubular: 25"
+                    material="src: ../img/SolarSystem/saturn-ring.png" position="0 0 35" rotation="90 0 0"
+                    scale="1 1 0.1"></a-entity>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 65000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 40" scale="1.5 1.5 1.5" rotation="0 0 0"
+                    src="url(../img/SolarSystem/uranus.jpg)"
+                    animation="property:rotation; from:0 0 0; to: 0 360 0; dur: 15000; easing: linear; loop: true">
+                </a-sphere>
+                <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.01;segmentsTubular: 50"
+                    material="color: #FFFFFF;" position="0 0 40" rotation="-10 90 0" scale="1 1 0.2">
+                </a-entity>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 70000; fill: forwards; easing: linear;loop: true">
+                <a-sphere position="0 0 45" scale="1.5 1.5 1.5" src="url(../img/SolarSystem/neptune.jpg)"
+                    animation="property:rotation; from: 0 0 0; to: 0 360 0; dur: 15000; loop: true; easing: linear">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 88000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="-3 0 50" scale="0.4 0.4 0.4" src="url(../img/SolarSystem/pluto.jpg)"
+                    animation="property:rotation; from: 0 0 0; to: 0 360 0; dur: 15000; loop: true; easing: linear">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 25000; fill: forwards; easing: linear; loop: true">
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="42 0 -55" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-42 0 -50" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-50 0 -45" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-45 0 -60" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="33.131 0 -56" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="55 0 -57" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="40 0 -58" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-41 0 -59" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-42 0 -46" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-43 0 -47" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-59.5853 0 -20.16478" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-45 0 -49" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-48 0 -51" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-5.5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="44 0 -52" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="45 0 -53" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="56 0 -54" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="47 0 50" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="48 0 51" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="50 0 52" geometry=""></a-sphere>
+            </a-entity>
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 20000; fill: forwards; easing: linear; loop: true">
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="-44 0 53"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="-45 0 54"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="-46 0 55"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="-47 0 56"></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-48.18789 0 57" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-48.18789 0 58" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-53.50358 0 59" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="43.17451 0 60" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="52.86022 0 61" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-52.01311 0 49" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-56 0 48" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-55 0 -48" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-53 0 -50" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-49 0 -52" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-48.5 0 52" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-48.01028 0 -52" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-23.6 0 56" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="27 0 60" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="30 0 -60" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-30 0 59" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-65.5 0 9.64998" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="42 0 -58" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-43 0 -59" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-54.5 0 59" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-64 0 45" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-73 0 -45" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-52 0 48" geometry=""></a-sphere>
+            </a-entity>
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 19000; fill: forwards; easing: linear; loop: true">
+
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-43.50358 0 -56" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="53.17451 0 -56" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="52.86022 0 56" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="52.01311 0 -59" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="52 0 60" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="52 0 -60" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="40 0 -55" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="59 0 55" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="68.5 0 63" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="48.01028 0 -62" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="57.6 0 50" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="47 0 -50" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="66.5 0 -60" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="56.1524 0 60" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-5.5 0 9.64998" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="55.4 0 -64" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="58 0 64" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-54.5 0 -57" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-64 0 57" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="53 0 -58" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="42 0 58" geometry=""></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="61 0 -62"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="51.5 0 62"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="42.3 0 -43"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="-0.980 0 43"></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-58.18789 0 -57" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-48.18789 0 57" geometry=""></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="51 0 -52"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="41.5 0 -53"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="52.3 0 -51"></a-sphere>
+                <a-sphere color="gray" scale="0.2 0.1 0.1" position="-54.980 0 -52"></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-48.18789 0 -60" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-68.18789 0 -61" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-50.48073 0 -62" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="50.89355 0 -55" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="51 0 -57" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="52.89355 0 -58" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="53 0 -55" geometry=""></a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-59.8769 0 -59.30251" geometry="">
+                </a-sphere>
+                <a-sphere color="gray" material="" scale="0.2 0.1 0.1" position="-56.63237 0 -51.50535" geometry="">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 92000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="-2 0 55" scale="0.2 0.40 0.2" src="url(../img/SolarSystem/haumea.jpg)"
+                    animation="property:rotation; from: 0 0 0; to: 0 360 0; dur: 15000; loop: true; easing: linear">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="2 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 100000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 60" scale="0.2 0.2 0.2" src="url(../img/SolarSystem/makemake.jpg)"
+                    animation="property:rotation; from: 0 0 0; to: 0 360 0; dur: 15000; loop: true; easing: linear">
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="-1 0 0" rotation="0 0 0"
+                animation="property:rotation; to: 0 360 0; dur: 110000; fill: forwards; easing: linear; loop: true">
+                <a-sphere position="0 0 65" scale="0.3 0.3 0.3" src="url(../img/SolarSystem/eris.jpg)"
+                    animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 15000; loop: true; easing: linear">
+                </a-sphere>
+            </a-entity>
+        </a-entity>
+    </a-scene>
+</body>
+
+</html>
