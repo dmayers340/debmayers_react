@@ -13,7 +13,7 @@ export const Home = () => {
                         <Card.Body>
                             <Card.Img variant="top" alt="Myself with VR headset on" src={process.env.PUBLIC_URL + '/img/self_vr_train.jpg'} />
                             <Card.Text>
-                                Download my Mithraeum APK for the Oculus Quest< a href="https://drive.google.com/open?id=1MpdORGaxbUzkkAsqrUg4txP_kA3ZMvrS"> here! </a>
+                                <a href="https://drive.google.com/open?id=1MpdORGaxbUzkkAsqrUg4txP_kA3ZMvrS"> Download my Mithraeum APK for the Oculus Quest on Google Drive! </a>
                             </Card.Text>
                             <Card.Img variant="bottom" src={process.env.PUBLIC_URL + '/img/Arran_v03.jpg'} alt="Goatfell mountain on the Isle of Arran viewed from the ferry approaching the island" />
                         </Card.Body>

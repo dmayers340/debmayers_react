@@ -55,7 +55,6 @@ export const About = () => {
                                 </Card>
                             ))}
                             <Card.Img variant="bottom" src='img/DukeChapel.jpg' alt='Duke Chapel at Dusk' />
-
                         </Card.Body>
                     </Card>
                 </Col>
