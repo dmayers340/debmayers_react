@@ -1,5 +1,5 @@
 import React from 'react';
-import {interests, education} from '../config/debstuff.json';
+import {interests, education} from '../config/debstuff.js';
 import {vr_projects} from '../config/projects.json';
 import { Helmet } from 'react-helmet';
 import { Card, Col, Row } from 'react-bootstrap';

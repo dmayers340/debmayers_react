@@ -1,5 +1,5 @@
 import React from 'react';
-import { experiences } from '../../config/debstuff.json';
+import { experiences } from '../../config/debstuff.js';
 import { Card } from 'react-bootstrap';
 import { Link, Route } from 'react-router-dom';
 import { Experience } from '../Experience';

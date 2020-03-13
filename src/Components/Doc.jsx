@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import {documents } from '../config/projects.json';
 
+// Fix to one file with Resume
 const Doc = () => (
         <>
             <Helmet>
