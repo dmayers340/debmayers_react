@@ -116,3 +116,15 @@ a.skip-main:focus, a.skip-main:active {
   white-space: nowrap;
   width: 1px;
 }
+
+.left-aligned{
+  text-align: left;
+}
+
+.no-list {
+  list-style: none;
+}
+
+.invisible {
+  display: none;
+}

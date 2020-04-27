@@ -1,6 +1,6 @@
 import React from 'react';
 import { Project } from '../Project';
-import { models } from '../../config/debstuff.json';
+import { models } from '../../config/debstuff.js';
 import { sketchfabModels } from '../../config/models.json'
 import { Helmet } from 'react-helmet';
 import '../../css/models.css';
