@@ -5,6 +5,9 @@ import {documents } from '../config/projects.json';
 // Fix to one file with Resume
 const Doc = () => (
         <>
+            <div className="visually-hidden">
+                <h1>Download {documents[1].title}</h1>
+            </div>
             <Helmet>
                 <title>{documents[1].title}</title>
             </Helmet>

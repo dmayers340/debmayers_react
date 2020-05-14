@@ -10,6 +10,9 @@ export const About = () => {
             <Helmet>
                 <title>About Deb Mayers</title>
             </Helmet>
+            <div className="visually-hidden">
+                <h1>About Deb Mayers</h1>
+            </div>
             <Row>
                 <Col id="main">
                     <Card style={{ width: '20rem', height: '70rem', marginBottom: '1rem' }}>

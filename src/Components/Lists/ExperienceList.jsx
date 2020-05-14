@@ -11,6 +11,9 @@ export const ExperienceList = ({match}) => {
             <Helmet>
                 <title>WebGL Experiences List Deb Mayers</title>
             </Helmet>
+            <div className="visually-hidden">
+                <h1>WebGL Experiences</h1>
+            </div>
             <div className = 'row'>
                 {experiences.map(experience => {
                         return (

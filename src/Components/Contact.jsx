@@ -10,6 +10,9 @@ export const Contact = () => {
             <Helmet>
                 <title>Contact Deb Mayers</title>
             </Helmet>
+            <div className="visually-hidden">
+                <h1>Deb Mayers Contact</h1>
+            </div>
             <div id="main" className="row">
                 <Card style={{ width: '20rem', marginBottom: '1rem' }}>
                     <Card.Body>

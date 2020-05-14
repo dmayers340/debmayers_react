@@ -10,13 +10,24 @@ export const Project = (props) => {
     return (
         <>
             {match.path === "/models" ? (
-                <Helmet>
-                    <title>3D Models List Deb Mayers</title>
-                </Helmet>
+                <>
+                    <Helmet>
+                        <title>3D Models List Deb Mayers</title>
+                    </Helmet>
+                    <div className="visually-hidden">
+                        <h1>3D Models List Deb Mayers</h1>
+                    </div>
+                </>
             ): 
-            ( <Helmet>
-                <title>Virtual Reality Experience List Deb Mayers</title>
-            </Helmet>
+            ( 
+                <>
+                    <Helmet>
+                        <title>Virtual Reality Experience List Deb Mayers</title>
+                    </Helmet>
+                    <div className="visually-hidden">
+                        <h1>Virtual Reality Experience List Deb Mayers</h1>
+                    </div>
+                </>
             )
             }
             

@@ -4,10 +4,11 @@ import { Card, Col, Image, Jumbotron, Row, ListGroup } from 'react-bootstrap';
 export const Home = () => {
     return (
         <>
+            <div className="visually-hidden">
+                <h1>Deb Mayers Home Page</h1>
+            </div>
             <Jumbotron fluid>
-                <h1>
-                    <Image src={process.env.PUBLIC_URL + '/img/debmayers.png'} alt= 'Deb Mayers logo' fluid />
-                </h1>
+                <Image src={process.env.PUBLIC_URL + '/img/debmayers.png'} alt= 'Deb Mayers logo' fluid />
             </Jumbotron>
             <Row>
                 <Col id="main" tabIndex={-1}>

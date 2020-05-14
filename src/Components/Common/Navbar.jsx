@@ -42,7 +42,7 @@ export const SiteNavbar = () => {
             alt="Deb Mayers Logo"
           />
         </Navbar.Brand>
-        <button onClick={() => setIsOpen(!isOpen)} className={`${toggleClass}`} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button onClick={() => setIsOpen(!isOpen)} className={`${toggleClass}`} type="button" data-toggle={`${collapseClass}`} data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
         <div className={`${collapseClass}`} id="navbarResponsive">
