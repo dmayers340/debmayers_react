@@ -27,7 +27,7 @@ export const Home = () => {
                         <Card.Body>
                             <Card.Title>Links to My Online Profiles:</Card.Title>
                             <Card.Img variant="top" src={process.env.PUBLIC_URL + '/img/CorbridgeLion.png'} alt="Stone Lion statue inside a round fountain in a (re)created Roman courtyard" />
-                                <ul className="no-list">
+                                <ul className="left-aligned">
                                     <li>
                                         <a href="https://sketchfab.com/debmayers24" aria-label="Deb Mayers Sketchfab Profile">
                                             <span aria-hidden="true">Sketchfab</span>
