@@ -17,12 +17,10 @@
             <a-asset-item id="building-mtl" src="../models/building/buildingOBJ.mtl"></a-asset-item>
             <a-asset-item id="central" src="../models/building/centralStation.obj"></a-asset-item>
             <a-asset-item id="central-mtl" src="../models/building/centralStation.mtl"></a-asset-item>
-            <a-asset-item id="tree" src="tree.gltf"></a-asset-item>
         </a-assets>
-        <a-camera twoway-motion="speed: 35">...</a-camera>
         <a-sky src="url(../img/sky.jpg)"></a-sky>
         <a-entity id="cameraRig">
-            <a-entity id="head" camera wasd-controls look-controls></a-entity>
+            <a-camera twoway-motion="speed: 35" wasd-controls="acceleration: 200"></a-camera>
             <a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;">
             </a-entity>
             <a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;">

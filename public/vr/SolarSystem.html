@@ -5,26 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+      <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/twoway-motion/twoway-motion.js"></script>
     <title>Solar System Deb Mayers</title>
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
     <a-scene>
-        <a-entity cameraRig>
-            <a-entity id="left-hand"
-                teleport-controls="type:line;startEvents:teleportstart;endEvents:teleportend;collisionEntities:#floorLeft;hitEntity:#hintEntity;cameraRig:#cameraRig;maxLength:30;curveHitColor:#ff9999"
-                vive-controls="hand: left" oculus-touch-controls="hand: left" microsoft-motion-controls="hand: left"
-                daydream-controls="" gearvr-controls="">
-            </a-entity>
-
-            <a-entity id="right-hand"
-                teleport-controls="button:trigger;startEvents:teleportstart;endEvents:teleportend;collisionEntities:#floorRight;cameraRig:#cameraRig;teleportOrigin:#head;curveNumberPoints:50;curveLineWidth:0.015;curveHitColor:#9999ff;curveShootingSpeed:4"
-                vive-controls="hand:right" microsoft-motion-controls="hand: right" oculus-touch-controls="hand:right"
-                daydream-controls="" gearvr-controls="">
-            </a-entity>
-        </a-entity>
-        <a-entity camera="" position="-20 1.6 1.39589" wasd-controls="acceleration: 200" rotation="0 0 0"
-            look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+       <a-camera twoway-motion="speed: 35" position="-30 1.6 -30" wasd-controls="acceleration: 200"></a-camera>
+      
         <a-sky src="url(../img/SolarSystem/stars.jpg)"></a-sky>
         <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
 
