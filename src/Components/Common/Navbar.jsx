@@ -22,6 +22,7 @@ import SolarSystem from '../XR/VR/SolarSystem';
 import SolarSystemAR from '../XR/AR/SolarSystemAR';
 import SciCenter from '../XR/AR/SciCenter';
 import Mithraeum from '../XR/AR/Mithraeum';
+import CodeWeek from '../XR/AR/CodeWeek';
 import { links, socialMedia } from '../../config/debstuff.js';
 
 export const SiteNavbar = () => {
@@ -97,6 +98,7 @@ export const SiteNavbar = () => {
         <Route exact path='/ar/solarsystem' component={SolarSystemAR} />
         <Route exact path='/ar/science' component={SciCenter} />
         <Route exact path='/ar/mithraeum' component={Mithraeum} />
+        <Route exact path='/ar/codeweek' component={CodeWeek} />
 
         <Route component={UnderConstruction} />
       </Switch>
