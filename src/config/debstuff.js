@@ -132,6 +132,10 @@ export const links = [
             {
                 "name": "AR Altars",
                 "href": "/ar"
+            },
+            {
+                "name": "Code Week Test",
+                "href": "/ar/codeweek"
             }
         ]
     },
