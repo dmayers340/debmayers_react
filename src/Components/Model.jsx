@@ -7,7 +7,7 @@ let currentExperience;
 let foundModel;
 
 export const Model = ({match}) => {
-    freestyleModels.map(curr => {
+    freestyleModels.forEach(curr => {
         if(curr.urlName === match.params.name){
             currentExperience = curr;
             foundModel = true;

@@ -6,7 +6,7 @@ import Helmet from 'react-helmet';
 let currentExperience;
 
 export const ProjectInformation = (props) => {
-    vr_projects.map(curr => {
+    vr_projects.forEach(curr => {
         if(curr.urlName === props.match.params.name){
             currentExperience = curr;
         } else {

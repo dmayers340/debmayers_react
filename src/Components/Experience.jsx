@@ -6,7 +6,7 @@ let currentExperience;
 let unityContent;
 
 export const Experience = (props) => {
-    experiences.map(curr => {
+    experiences.forEach(curr => {
         if(curr.name === props.match.params.name){
             currentExperience = curr;
         }
