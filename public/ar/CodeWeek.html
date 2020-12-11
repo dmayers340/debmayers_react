@@ -1,58 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>CodeWeek Demo</title>
 
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CodeWeek Demo</title>
 
-    <style>
-      .arjs-loader {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <script>
+    const transactions = [10, 12, 2, 5, 6, 8.12, 7.53, 4.52]
+    const add = (a, b) => a + b;
+    let total = transactions.reduce(add);
+    let average = total / transactions.length;
+    AFRAME.registerComponent('average', {
+      init: function () {
+        document.getElementById('ave').setAttribute('value', 'Average: ' + average);
       }
-
-      .arjs-loader div {
-        text-align: center;
-        font-size: 1.25em;
-        color: white;
+    })
+    AFRAME.registerComponent('total', {
+      init: function () {
+        document.getElementById('total').setAttribute('value', 'Total: ' + average);
       }
-    </style>
-  </head>
+    })
+    AFRAME.registerComponent('targaverage', {
+      init: function () {
+        document.getElementById('targaverage').setAttribute('value', 'Average: ' + average);
+      }
+    })
+    AFRAME.registerComponent('targtotal', {
+      init: function () {
+        document.getElementById('targtotal').setAttribute('value', 'Total: ' + average);
+      }
+    })
+  </script>
+  <style>
+    .arjs-loader {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  <body style="margin : 0px; overflow: hidden;">
-    <div class="arjs-loader">
-      <div>Loading CodeWeek Example, please wait...</div>
-    </div>
-   
-    <a-scene
-      vr-mode-ui="enabled: false;"
-      renderer="logarithmicDepthBuffer: true;"
-      embedded
-      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+    .arjs-loader div {
+      text-align: center;
+      font-size: 1.25em;
+      color: white;
+    }
+  </style>
+</head>
 
-      <a-nft
-        type="nft"
-        url="../img/Descriptors/Starbucks"
-        smooth="true"
-        smoothCount="10"
-        smoothTolerance=".01"
-        smoothThreshold="5">
+<body style="margin : 0px; overflow: hidden;">
+  <div class="arjs-loader">
+    <div>Loading CodeWeek Example, please wait...</div>
+  </div>
 
-        <a-box scale="100 100 100" color="blue" position="0 0 0"></a-box>
-      </a-nft>
+  <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
 
-      <a-entity camera></a-entity> 
-    </a-scene>
-  </body>
+    <a-nft type="nft" url="../img/Descriptors/Starbucks" smooth="true" smoothCount="10" smoothTolerance=".01"
+      smoothThreshold="5">
+      <a-plane scale="30 30 30" position="0 4 -4">
+        <a-text text-color="#000" value="Rewards Available. You've spent $4 in rewards." position="0 1 0" />
+      </a-plane>
+      <a-plane scale="30 30 30" position="4 4 -4">
+        <a-text id="ave" average text-color="#000" value="" position="0 1 0" />
+      </a-plane>
+      <a-plane scale="30 30 30" position="-4 4 -4">
+        <a-text id="total" total text-color="#000" value="" position="0 1 0" />
+      </a-plane>
+      <a-box scale="100 100 100" color="blue" position="0 0 0"></a-box>
+    </a-nft>
+    <a-nft type="nft" url="../img/Descriptors/target" smooth="true"
+      smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+      <a-plane scale="30 30 30" position="0 4 -4">
+        <a-text text-color="#000" value="Rewards Available. You've spent $4 in rewards." position="0 1 0" />
+      </a-plane>
+      <a-plane scale="30 30 30" position="4 4 -4">
+        <a-text id="targaverage" targaverage text-color="#000" value="" position="0 1 0" />
+      </a-plane>
+      <a-plane scale="30 30 30" position="-4 4 -4">
+        <a-text id="targtotal" targtotal text-color="#000" value="" position="0 1 0" />
+      </a-plane>
+      <a-box scale="100 100 100" color="blue" position="0 0 0"></a-box>
+    </a-nft>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
 </html>
