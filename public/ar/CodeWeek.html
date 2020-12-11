@@ -12,15 +12,16 @@
     const transactions = [10, 12, 2, 5, 6, 8.12, 7.53, 4.52]
     const add = (a, b) => a + b;
     let total = transactions.reduce(add);
+    console.log('total', total);
     let average = total / transactions.length;
     AFRAME.registerComponent('average', {
       init: function () {
-        document.getElementById('ave').setAttribute('value', 'Average: ' + average);
+        document.getElementById('average').setAttribute('value', 'Average: ' + average);
       }
     })
     AFRAME.registerComponent('total', {
       init: function () {
-        document.getElementById('total').setAttribute('value', 'Total: ' + average);
+        document.getElementById('total').setAttribute('value', 'Total: ' + total);
       }
     })
     AFRAME.registerComponent('targaverage', {
@@ -30,7 +31,7 @@
     })
     AFRAME.registerComponent('targtotal', {
       init: function () {
-        document.getElementById('targtotal').setAttribute('value', 'Total: ' + average);
+        document.getElementById('targtotal').setAttribute('value', 'Total: ' + total);
       }
     })
   </script>
@@ -66,29 +67,27 @@
 
     <a-nft type="nft" url="../img/Descriptors/Starbucks" smooth="true" smoothCount="10" smoothTolerance=".01"
       smoothThreshold="5">
-      <a-plane scale="30 30 30" position="0 4 -4">
-        <a-text text-color="#000" value="Rewards Available. You've spent $4 in rewards." position="0 1 0" />
+      <a-plane position="0 4 -4">
+        <a-text color="#000" value="Rewards Available. You've spent $4 in rewards." position="0 1 0" />
       </a-plane>
-      <a-plane scale="30 30 30" position="4 4 -4">
-        <a-text id="ave" average text-color="#000" value="" position="0 1 0" />
+      <a-plane position="4 4 -4">
+        <a-text id="average" average color="#000" value="" position="0 1 0" />
       </a-plane>
-      <a-plane scale="30 30 30" position="-4 4 -4">
-        <a-text id="total" total text-color="#000" value="" position="0 1 0" />
+      <a-plane position="-4 4 -4">
+        <a-text id="total" total color="#000" value="" position="0 1 0" />
       </a-plane>
-      <a-box scale="100 100 100" color="blue" position="0 0 0"></a-box>
     </a-nft>
     <a-nft type="nft" url="../img/Descriptors/target" smooth="true"
       smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-      <a-plane scale="30 30 30" position="0 4 -4">
+      <a-plane position="0 4 -4">
         <a-text text-color="#000" value="Rewards Available. You've spent $4 in rewards." position="0 1 0" />
       </a-plane>
-      <a-plane scale="30 30 30" position="4 4 -4">
-        <a-text id="targaverage" targaverage text-color="#000" value="" position="0 1 0" />
+      <a-plane position="4 4 -4">
+        <a-text id="targaverage" targaverage color="#000" value="" position="0 1 0" />
       </a-plane>
-      <a-plane scale="30 30 30" position="-4 4 -4">
-        <a-text id="targtotal" targtotal text-color="#000" value="" position="0 1 0" />
+      <a-plane position="-4 4 -4">
+        <a-text id="targtotal" targtotal color="#000" value="" position="0 1 0" />
       </a-plane>
-      <a-box scale="100 100 100" color="blue" position="0 0 0"></a-box>
     </a-nft>
 
     <a-entity camera></a-entity>
