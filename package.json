@@ -1,0 +1,53 @@
+{
+  "name": "debmayers_site",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "aframe": "^1.2.0",
+    "aframe-mobile-controls": "0.0.5",
+    "aframe-physics-system": "^4.0.1",
+    "aframe-react": "^4.4.0",
+    "aframe-teleport-controls": "^0.3.1",
+    "bootstrap": "^4.6.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.5.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
+    "react-pdf": "^5.2.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0",
+    "react-script-tag": "^1.1.2",
+    "react-scripts": "^3.4.4",
+    "react-twitter-embed": "^3.0.3",
+    "react-unity-webgl": "^8.0.3",
+    "three-pointer-controls": "^0.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {}
+}

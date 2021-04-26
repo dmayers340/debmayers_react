@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>Carrawburgh Roman Fort Deb Mayers</title>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+    <a-scene physics="debug: true">
+
+        <a-sky src="url(../img/sky.jpg)"></a-sky>
+        <a-entity cameraRig>
+            <a-entity id="left-hand"
+                teleport-controls="type:line;startEvents:teleportstart;endEvents:teleportend;collisionEntities:#floorLeft;hitEntity:#hintEntity;cameraRig:#cameraRig;maxLength:30;curveHitColor:#ff9999"
+                vive-controls="hand: left" oculus-touch-controls="hand: left" microsoft-motion-controls="hand: left"
+                daydream-controls="" gearvr-controls="">
+            </a-entity>
+
+            <a-entity id="right-hand"
+                teleport-controls="button:trigger;startEvents:teleportstart;endEvents:teleportend;collisionEntities:#floorRight;cameraRig:#cameraRig;teleportOrigin:#head;curveNumberPoints:50;curveLineWidth:0.015;curveHitColor:#9999ff;curveShootingSpeed:4"
+                vive-controls="hand:right" microsoft-motion-controls="hand: right" oculus-touch-controls="hand:right"
+                daydream-controls="" gearvr-controls="">
+            </a-entity>
+        </a-entity>
+        <a-entity camera="" wasd-controls="acceleration: 1000" rotation="-7.906817572805332 -183.69026911894196 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="" position="-72.48269575508253 5 150.9989394221399"></a-entity>
+        <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
+      
+        <a-gltf-model src="../models/gltf/workingOnHQ.glb" scale="0.1 0.1 0.1" position="-70 0 -50">
+        </a-gltf-model>
+    </a-scene>
+</body>
+
+</html>

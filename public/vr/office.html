@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="./message.html"></script>
+    <script src="./info.js"></script>
+    <title>Return to Office</title>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene 
+        loading-screen="dotsColor: white; backgroundColor: black" 
+        physics="debug: true"
+        info-message="htmlSrc: #messageText">
+
+        <a-assets>
+            <a-gltf-model id="office" src="../models/office_three.glb"></a-gltf-model>
+            <a-asset-item id="messageText" src="./message.html"></a-asset-item>
+        </a-assets>
+
+        <a-sky src="url(../img/sky.jpg)"></a-sky>
+        <a-entity id="cameraRig">
+            <a-camera twoway-motion="speed: 35" wasd-controls="acceleration: 50"></a-camera>
+            <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
+            <a-entity id="rightHand" hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
+        </a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-2 0.1 2.5"></a-triangle>
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-4 0.1 2.5"></a-triangle>
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-6 0.1 2.5"></a-triangle>
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-8 0.1 2.5"></a-triangle>
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-10 0.1 2.5"></a-triangle>
+
+
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-2 0.1 -8"></a-triangle>
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-4 0.1 -8"></a-triangle>
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-6 0.1 -8"></a-triangle>
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-8 0.1 -8"></a-triangle>
+            <a-triangle color="blue" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 56 0"
+                position="-10 0.1 -8"></a-triangle>
+
+        </a-entity>
+
+        <a-entity>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 90 0"
+                position="-13 0.1 2"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 90 0"
+                position="-13 0.1 0"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 90 0"
+                position="-13 0.1 -2"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 90 0"
+                position="-13 0.1 -4"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 90 0"
+                position="-13 0.1 -6"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 90 0"
+                position="-13 0.1 -8"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 90 0"
+                position="-13 0.1 -10"></a-triangle>
+
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -90 0"
+                position="1.5 0.1 2"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -90 0"
+                position="1.5 0.1 0"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -90 0"
+                position="1.5 0.1 -2"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -90 0"
+                position="1.5 0.1 -4"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -90 0"
+                position="1.5 0.1 -6"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -90 0"
+                position="1.5 0.1 -8"></a-triangle>
+            <a-triangle color="#000000" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -90 0"
+                position="1.5 0.1 -10"></a-triangle>
+
+        </a-entity>
+
+        <a-entity>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="0 0.1 -3"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-2 0.1 -3"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-4 0.1 -3"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-6 0.1 -3"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-8 0.1 -3"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-10 0.1 -3"></a-triangle>
+
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="0 0.1 -13"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-2 0.1 -13"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-4 0.1 -13"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-6 0.1 -13"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-8 0.1 -13"></a-triangle>
+            <a-triangle color="yellow" vertex-c="1 -1 0" vertex-a="1 .5 0" material="" geometry="" rotation="-90 -130 0"
+                position="-10 0.1 -13"></a-triangle>
+        </a-entity>
+
+        <a-entity>
+            <a-box color="red" height="1" depth="0.2" width="0.5" rotation="0 0 -90" position="-1.5 0.8 1.4"></a-box>
+            <a-box color="red" height="1" depth="0.2" width="0.5" rotation="0 0 -90" position="-6.5 0.8 1.4"></a-box>
+            <a-box color="red" height="1" depth="0.2" width="0.5" rotation="0 0 -90" position="-3.9 0.8 3.5"></a-box>
+            <a-box color="red" height="1" depth="0.2" width="0.5" rotation="0 0 -90" position="-9.5 0.8 3.5"></a-box>
+
+            <a-box color="red" height="1" depth="0.2" width="0.5" rotation="0 0 -90" position="-3.6 0.8 -1.4"></a-box>
+            <a-box color="red" height="1" depth="0.2" width="0.5" rotation="0 0 -90" position="-8.6 0.8 -1.4"></a-box>
+            <a-box color="red" height="1" depth="0.2" width="0.5" rotation="0 0 -90" position="-1.4 0.8 -4"></a-box>
+            <a-box color="red" height="1" depth="0.2" width="0.5" rotation="0 0 -90" position="-5.8 0.8 -4"></a-box>
+        </a-entity>
+        <a-plane static-body src="url(../img/carpet.jpg)" height="2000" width="2000" rotation="-90 0 0" position="0 -0.2 0">
+        </a-plane>
+        <a-entity static-body gltf-model="#office" scale="4 4 4" position="0 0.5 0"></a-entity>
+
+    </a-scene>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+#twitter-widget-0 .timeline-Widget {
+  color: #20399D
+}
+a {
+  color: #20399D;
+  text-decoration: underline;
+}
+.customisable-highlight {
+  color: #20399D
+}
+.PrettyLink-value {
+  color: #20399D
+}
+.TweetAuthor{
+  color: #000000;
+}
+.Identity-screenName{
+  color: #000000 !important;
+}
+.timeline-Tweet-retweetCredit{
+  color: #000000 !important;
+}
+.main-container{
+  height:100vh;
+  width:100vw;
+  margin: 20px;
+}
+
+.image {
+  max-width:100%;
+  max-height:100%;
+}
+dl {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;      /* set the container width*/
+  overflow: visible;
+}
+dt {
+  flex: 0 0 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+dd {
+  flex:0 0 50%;
+  margin-left: auto;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.row {
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+.nav-link{
+  color: #ffffff !important; 
+}
+
+.arcode{
+  margin-top: 10vh;
+  text-align: center;
+  align-content: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left:0px;
+  background: #BF1722;
+  color: white;
+  padding:8px;
+  z-index: 100;
+}
+.skip-link:focus{
+  top:0;
+}
+
+.social-media-icon {
+  color: #ffffff !important;
+  padding-left: 5px;
+}
+.icons{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding:0;
+}
+.embed8-link {
+  color: #20399D !important;
+  text-decoration: underline !important;
+}
+a.skip-main {
+  position:absolute;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+  color: #fff;
+  background-color:#000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow:auto;
+  margin: 10px 35%;
+  padding:5px;
+  border-radius: 15px;
+  border:4px solid yellow;
+  text-align:center;
+  font-size:1.2em;
+  z-index:999;
+}
+
+.visually-hidden {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.left-aligned{
+  text-align: left;
+}
+
+.no-list {
+  list-style: none;
+}
+
+.invisible {
+  display: none;
+}

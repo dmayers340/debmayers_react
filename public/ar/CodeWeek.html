@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CodeWeek Demo</title>
+
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <script>
+    const transactions = [10, 12, 2, 5, 6, 8.12, 7.53, 4.52];
+    const targetTransactions = [5.92, 4.99, 100.23, 50.89, 15.23, 256.34, 198.22];
+    const add = (a, b) => a + b;
+    const total = transactions.reduce(add);
+    const targetTotal = targetTransactions.reduce(add);
+    const average = total / transactions.length;
+    const targetAverage = targetTotal / transactions.length;
+
+    AFRAME.registerComponent('average', {
+      init: function () {
+        document.getElementById('average').setAttribute('value', 'Average: ' + average.toFixed(2));
+      }
+    })
+    AFRAME.registerComponent('total', {
+      init: function () {
+        document.getElementById('total').setAttribute('value', 'Total: ' + total);
+      }
+    })
+    AFRAME.registerComponent('targetaverage', {
+      init: function () {
+        document.getElementById('targetaverage').setAttribute('value', 'Average: ' + average.toFixed(2));
+      }
+    })
+    AFRAME.registerComponent('targettotal', {
+      init: function () {
+        document.getElementById('targettotal').setAttribute('value', 'Total: ' + total);
+      }
+    })
+  </script>
+  <style>
+    .arjs-loader {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .arjs-loader div {
+      text-align: center;
+      font-size: 1.25em;
+      color: white;
+    }
+  </style>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+  <div class="arjs-loader">
+    <div>Loading CodeWeek Example, please wait...</div>
+  </div>
+
+  <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+
+    <a-nft type="nft" url="../img/Descriptors/Starbucks" smooth="true" smoothCount="10" smoothTolerance=".01"
+      smoothThreshold="5">  
+      <a-plane position="100 0 0" height="20" width="20">
+        <a-text color="#000" value="Rewards Available. You've spent $4 in rewards." />
+      </a-plane>
+      <a-plane position="124 0 0" height="20" width="20"> 
+        <a-text id="average" average color="#000" value="" position="0 1 0" />
+      </a-plane>
+      <a-plane position="80 0 0" height="20" width="20">
+        <a-text id="total" total color="#000" value="" position="0 0.5 0" />
+      </a-plane>
+    </a-nft>
+
+    <a-nft type="nft" url="../img/Descriptors/target" smooth="true"
+      smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+      <a-plane position="100 0 0" height="20" width="20">
+        <a-text color="#000" value="Rewards Available. You've spent $20 in rewards." />
+      </a-plane>
+      <a-plane position="124 0 0" height="20" width="20"> 
+        <a-text id="targetaverage" targetaverage color="#000" value="" position="0 1 0" />
+      </a-plane>
+      <a-plane position="80 0 0" height="20" width="20">
+        <a-text id="targettotal" targettotal color="#000" value="" position="0 0.5 0" />
+      </a-plane>
+    </a-nft>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
