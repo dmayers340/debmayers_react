@@ -8,6 +8,9 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@react-three/drei": "^7.5.0",
+    "@react-three/fiber": "^7.0.6",
+    "@react-three/xr": "^3.1.2",
     "aframe": "^1.2.0",
     "aframe-mobile-controls": "0.0.5",
     "aframe-physics-system": "^4.0.1",
@@ -26,6 +29,7 @@
     "react-scripts": "^3.4.4",
     "react-twitter-embed": "^3.0.3",
     "react-unity-webgl": "^8.0.3",
+    "three": "^0.131.3",
     "three-pointer-controls": "^0.6.0"
   },
   "scripts": {

@@ -16,23 +16,15 @@
 
 <body style="margin : 0px; overflow: hidden;">
   <a-scene loading-screen="dotsColor: white; backgroundColor: black" physics="debug: true"
-    info-message="htmlSrc: #messageText"
-    education-message="htmlSrc:#eduMessage"
-    work-message="htmlSrc:#workMessage"
-  >
+    info-message="htmlSrc: #messageText" education-message="htmlSrc:#eduMessage" work-message="htmlSrc:#workMessage">
     <a-assets>
+      <!-- Messages -->
       <a-asset-item id="messageText" src="./message.html"></a-asset-item>
       <a-asset-item id="eduMessage" src="./education.html"></a-asset-item>
       <a-asset-item id="workMessage" src="./work.html"></a-asset-item>
+
+      <!-- GLTF models-->
       <a-gltf-model id="clt" src="../models/Clt.glb"></a-gltf-model>
-      <a-asset-item id="boxer" src="../models/boxer/boxer.obj"></a-asset-item>
-      <a-asset-item id="boxer-mtl" src="../models/boxer/boxer.mtl"></a-asset-item>
-      <a-asset-item id="building-obj" src="../models/building/buildingOBJ.obj"></a-asset-item>
-      <a-asset-item id="building-mtl" src="../models/building/buildingOBJ.mtl"></a-asset-item>
-      <a-asset-item id="central" src="../models/building/centralStation.obj"></a-asset-item>
-      <a-asset-item id="central-mtl" src="../models/building/centralStation.mtl"></a-asset-item>
-      <a-asset-item id="stoneBallObj" src="../models/obj/stone-balls.obj"></a-asset-item>
-      <a-asset-item id="stoneBallMtl" src="../models/obj/stone-balls.mtl"></a-asset-item>
       <a-gltf-model id="carrawburgh" src="../models/gltf/workingOnHQ.glb">
       </a-gltf-model>
       <a-gltf-model id="mural" src="../models/gltf/mural.glb"></a-gltf-model>
@@ -43,11 +35,22 @@
       </a-gltf-model>
       <a-gltf-model id="primaporta" src="../models/gltf/PrimaPortaGLB.glb" scale="0.1 0.1 0.1"
         position="-4.74 0.843 -7.015" rotation="0 104 -88.17"></a-gltf-model>
-      <a-asset-item id="mummy-head" src="../models/obj/mummy-head.obj"></a-asset-item>
-      <a-asset-item id="mummy-head-mtl" src="../models/obj/mummy-head.mtl"></a-asset-item>
       <a-gltf-model id="mithraeum" src="../models/gltf/decimatedMithraeum.glb">
       </a-gltf-model>
       <a-gltf-model id="mithraeumGLB" src="../models/gltf/mithraeumGLB.glb"></a-gltf-model>
+      <!-- OBJ Models-->
+      <a-asset-item id="boxer" src="../models/boxer/boxer.obj"></a-asset-item>
+      <a-asset-item id="boxer-mtl" src="../models/boxer/boxer.mtl"></a-asset-item>
+      <a-asset-item id="building-obj" src="../models/building/buildingOBJ.obj"></a-asset-item>
+      <a-asset-item id="building-mtl" src="../models/building/buildingOBJ.mtl"></a-asset-item>
+      <a-asset-item id="central" src="../models/building/centralStation.obj"></a-asset-item>
+      <a-asset-item id="central-mtl" src="../models/building/centralStation.mtl"></a-asset-item>
+      <a-asset-item id="stoneBallObj" src="../models/stone-balls/stone-balls.obj"></a-asset-item>
+      <a-asset-item id="stoneBallMtl" src="../models/stone-balls/stone-balls.mtl"></a-asset-item>
+      <a-asset-item id="mummy-head" src="../models/mummy-head/mummy-head.obj"></a-asset-item>
+      <a-asset-item id="mummy-head-mtl" src="../models/mummy-head/mummy-head.mtl"></a-asset-item>
+      <a-asset-item id="marcus-obj" src="../models/marcus-aurelius-ncma/marcus.obj"></a-asset-item>
+      <a-asset-item id="marcus-mtl" src="../models/marcus-aurelius-ncma/marcus.mtl"></a-asset-item>
     </a-assets>
 
     <a-sky src="url(../img/sky.jpg)"></a-sky>
@@ -121,6 +124,7 @@
         rotation="-7.8 -8 -94.3"></a-entity>
       <a-entity obj-model="obj: #stoneBallObj; mtl:#stoneBallMtl" scale="0.5 0.5 0.5" position="5.12229 3 3.99216"
         rotation="-64.65141168697183 3.0000000000000004 109.85663580720352"></a-entity>
+      <a-entity obj-model="obj: #marcus-obj; mtl:#marcus-mtl" rotation="0 0 0" position="-6 0.6 10.6" scale="0.05 0.05 0.05"></a-entity>
     </a-entity>
 
     <a-entity id="mithraeum">
