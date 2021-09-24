@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { SiteNavbar } from './Components/Common/Navbar';
+import { SiteNavbar } from './Components/SiteNavbar';
 
 library.add(fab)
 
