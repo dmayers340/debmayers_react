@@ -11,6 +11,7 @@
     "@react-three/drei": "^7.5.0",
     "@react-three/fiber": "^7.0.6",
     "@react-three/xr": "^3.1.2",
+    "@zappar/zappar-react-three-fiber": "^1.0.6",
     "aframe": "^1.2.0",
     "aframe-mobile-controls": "0.0.5",
     "aframe-physics-system": "^4.0.1",
