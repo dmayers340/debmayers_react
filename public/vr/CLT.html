@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="./message.html"></script>
+    <script src="./info.js"></script>
+    <title>Return to Office</title>
+</head>
+<script>
+    AFRAME.registerComponent('changescene', {
+      schema: {
+      },
+  
+      init: function () {
+        var data = this.data;
+        var el = this.el; 
+        console.log('el', el);
+  
+        el.addEventListener('click', function () {
+            console.log('Clicked Here');
+            window.location.href = './office.html'
+        });
+      }
+    });
+  </script>
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene 
+        loading-screen="dotsColor: white; backgroundColor: black" 
+        physics="debug: true"
+        info-message="htmlSrc: #messageText">        
+        <a-assets>
+            <a-asset-item id="messageText" src="./message.html"></a-asset-item>
+            <a-gltf-model id="clt" src="../models/clt/Clt.glb"></a-gltf-model>
+        </a-assets>
+
+        <a-sky src="url(../img/sky.jpg)"></a-sky>
+        <a-entity id="cameraRig">
+            <a-entity camera look-controls position="0 1.6 0" twoway-motion="speed: 35" wasd-controls="acceleration: 50"></a-entity>
+            <a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;">
+            </a-entity>
+            <a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;">
+            </a-entity>
+        </a-entity>
+
+        <a-entity teleport-controls="startEvents: teleportstart; endEvents: teleportend" vive-controls="hand: left"
+            oculus-touch-controls="hand: left" microsoft-motion-controls="hand: left" daydream-controls="left"
+            gearvr-controls="left">
+        </a-entity>
+
+        <a-entity teleport-controls="startEvents: teleportstart; endEvents: teleportend; type: line"
+            vive-controls="hand: right" microsoft-motion-controls="hand: right" oculus-touch-controls="hand: right"
+            daydream-controls="right" gearvr-controls="right">
+        </a-entity>
+
+        <a-plane static-body src="url(../img/ground.jpg)" height="2000" width="2000" rotation="-90 0 0" position="0 -0.2 0"></a-plane>
+        <a-entity static-body changescene gltf-model="#clt" position="0 0 0" ></a-entity>
+
+        <a-entity cursor="rayOrigin:mouse"></a-entity>
+
+    </a-scene>
+</body>
+
+</html>

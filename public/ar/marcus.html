@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.8/aframe/build/aframe-ar.js"></script>
+    <script src="./message.html"></script>
+    <title>Marcus Aurelius AR</title>
+</head>
+
+
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs info-message="htmlSrc: #messageText">
+        <a-assets>
+            <a-asset-item id="marcus-obj" src="../models/marcus-aurelius-ncma/marcus.obj"></a-asset-item>
+            <a-asset-item id="marcus-mtl" src="../models/marcus-aurelius-ncma/marcus.mtl"></a-asset-item>
+            <a-asset-item id="messageText" src="./message.html"></a-asset-item>
+        </a-assets>
+        <a-marker preset="hiro">
+            <a-entity obj-model="obj: ../models/marcus-aurelius-ncma/marcus.obj; mtl: ../models/marcus-aurelius-ncma/marcus.mtl" rotation="70.871 -176.00461325505708 6.469" position="14.69633 -26.75914 -0.17047" scale="0.5 0.5 0.5"></a-entity>
+           
+
+            <a-plane position="0 0 0" height="8" width="8" rotation="-90 0 0">
+                <a-text position="-3 0 1" color="#000" value="Roman, marble, late 2nd century. Marcus Aurelius, the last of the 'good emperors' of the second century, ruled the Roman Empire from 161 to 180. His successful career as a soldier and an emperor is attested in historical accounts. His adherence to the principles of Greek Stoic philosophy is recorded in his private devotional diary that has survived in a collection of twelve books, given the modern name Meditations. Written in Greek rather than Latin, they reveal an intense scrutiny of the burden of power while pursuing an active life in harmony with nature. In this mature portrait, Marcus Aurelius is wearing a beard, as did his adopted grandfather the Emperor Hadrian, in an acknowledgment of the tradition of the bearded Greek philosopher. The richly carved surface of the hair and beard contrasts with the smooth, imposing planes of the face. The eyes are lightly incised, creating a forceful expression enhanced by the luminous quality of the stone. The image is that of a vigorous yet thoughtful emperor, the personification of Plato's philosopher king."></a-text>
+            </a-plane>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>

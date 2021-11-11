@@ -1,0 +1,100 @@
+{
+    "vr_projects": [
+        {
+            "name": "Temple to Mithras at Carrawburgh",
+            "description": "For this project, I created a 3D model of the temple to Mithras at the Roman fort of Carrawburgh on Hadrian's Wall. I designed the experience interaction and voice following concepts in e-learning and experiential learning theories.",
+            "dissertationVideo": "https://www.youtube.com/embed/hHQXRn7V1MU",
+            "mainImageAlt": "(Re)Created Temple to Mithras at Carrawburgh, displaying the nave with altars and the cult statue behind.",
+            "mainImageUrl": "/img/mithraeum_reconstructed.jpg",
+            "images": [
+                {
+                    "imgSrc": "/img/graph1.png",
+                    "imgAlt": "Number of Questions Answered Correctly on the Learning Questionnaire"
+                },
+                {
+                    "imgSrc": "/img/graph2.png",
+                    "imgAlt": "Factors measured on the Post Experience Questionnaire (7 high, 1 low)"
+                },
+                {
+                    "imgSrc": "/img/graph3.png",
+                    "imgAlt": "Sensory factors measured on the Post Experience Questionnaire"
+                }
+            ],
+            "document": "/doc/Mayers2018_MScDissertation_UoG.pdf",
+            "urlName": "mithraeum",
+            "projectUrl": "projects/mithraeum"
+        },
+        {
+            "name": "Religious Landscape at Carrawburgh",
+            "description": "How can landscape and sensory archaeology help understand the relationship between the religious shrines and the spring at Carrawburgh? How can 3D modelling be used as a tool to augment sensory and landscape archaeology?",
+            "urlName": "carrawburgh",
+            "mainImageAlt": "(Re)Created Temple to Mithras at Carrawburgh",
+            "mainImageUrl": "/img/carrawburgh3.png",
+            "images": [
+                {
+                    "imgSrc": "/img/carrawburgh2.png",
+                    "imgAlt": "Photo of (Re) created Carrawburgh c. 133 AD"
+                },
+                {
+                    "imgSrc": "/img/carrawburgh1.png",
+                    "imgAlt": "Photo of (Re) created Carrawburgh c. 300 AD"
+                },
+                {
+                    "imgSrc": "/img/carrawburgh3.png",
+                    "imgAlt": "Photo of (Re) created Carrawburgh c. 400 AD"
+                }
+            ],
+            "document": "/doc/Mayers_ReligiousLandscapeCarrawburgh.pdf",
+            "projectUrl": "projects/carrawburgh"
+        },
+        {
+            "name": "Corbridge Lion",
+            "description": "(Re)creating a bit of Corbridge Roman town with the Corbridge Lion fountain",
+            "link": "https://sketchfab.com/3d-models/corbridge-lion-ab740d01dc7f49018d45369014bfacb8",
+            "linkDescription": "See the model on Sketchfab",
+            "mainImageUrl": "/img/CorbridgeLion.png",
+            "mainImageAlt": "(Re)Created Corbridge Roman Town, with lion fountain inside a basin",
+            "urlName": "corbridgelion",
+            "images": [
+                {
+                    "imgSrc": "/img/CorbridgeLion.png",
+                    "imgAlt": "(Re)Created Corbridge Roman Town, with lion fountain inside a basin"
+                }
+            ],
+            "projectUrl": "projects/corbridgelion"
+        },
+        {
+            "name": "VR Workplace Training",
+            "description": "Prototype to use Virtual Reality for workplace training. Currently creating an interactive office space before working on rigging and animation of characters.",
+            "video": "/interactableKeyboard.mp4",
+            "mainImageAlt": "Office Space",
+            "mainImageUrl": "/img/Workplace.png",
+            "urlName": "workplaceTraining",
+            "projectUrl": "projects/workplaceTraining"
+        },
+        {
+            "name": "Learning Amazon Sumerian",
+            "description":"Learning Amazon Sumerian to do a prototype of workplace bias training.",
+            "mainImageAlt": "Office Space",
+            "mainImageUrl": "/img/amazonsumerian.png",
+            "externalLink": "https://us-east-2.sumerian.aws/64ceb6051ef14a8892f1f91f280c56b6.scene",
+            "linkDescription": "See the current version of the training on the publicly hosted site."
+        }
+    ],
+    "documents": [
+        {
+            "linkDescription": "Go to the interactive version of my CV in a WebXR A-Frame Scene",
+            "link": "https://debmayers.com/cv",
+            "dataSource": "doc/MayersResume.pdf",
+            "documentDescription": "Download CV PDF",
+            "title": "Resume Document Deb Mayers"
+        },
+        {
+            "linkDescription": "Google Doc Version of Spatial Computing Paper",
+            "link": "https://docs.google.com/document/d/1lZgZZY9jo4a9f88HZX6wxbmy_W91ivBovpgGOdvgWSY/edit",
+            "dataSource": "doc/Mayers_SpatialComputingForOffices.pdf",
+            "documentDescription": "Download the Spatial Computing Paper PDF",
+            "title": "Spatial Computing Paper Deb Mayers"
+        }
+    ]
+}

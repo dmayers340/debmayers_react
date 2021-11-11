@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="./message.html"></script>
+  <script src="./info.js"></script>
+  <script src="./education.js"></script>
+  <script src="./education.html"></script>
+  <script src="./work.html"></script>
+  <script src="./work.js"></script>
+  <title>Deb Mayers CV</title>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene loading-screen="dotsColor: white; backgroundColor: black" physics="debug: true"
+    info-message="htmlSrc: #messageText" education-message="htmlSrc:#eduMessage" work-message="htmlSrc:#workMessage">
+    <a-assets>
+      <!-- Messages -->
+      <a-asset-item id="messageText" src="./message.html"></a-asset-item>
+      <a-asset-item id="eduMessage" src="./education.html"></a-asset-item>
+      <a-asset-item id="workMessage" src="./work.html"></a-asset-item>
+
+      <!-- GLTF models-->
+      <a-gltf-model id="clt" src="../models/clt/Clt.glb"></a-gltf-model>
+      <a-gltf-model id="carrawburgh" src="../models/gltf/workingOnHQ.glb">
+      </a-gltf-model>
+      <a-gltf-model id="mural" src="../models/gltf/mural.glb"></a-gltf-model>
+      <a-gltf-model id="lion" src="../models/gltf/lion.glb"></a-gltf-model>
+      <a-gltf-model id="lion_fountain" src="../models/gltf/fountainBase.glb"></a-gltf-model>
+      <a-gltf-model id="vase" src="../models/gltf/vase.glb"></a-gltf-model>
+      <a-gltf-model id="mithras" src="../models/gltf/mithras.glb">
+      </a-gltf-model>
+      <a-gltf-model id="primaporta" src="../models/gltf/PrimaPortaGLB.glb" scale="0.1 0.1 0.1"
+        position="-4.74 0.843 -7.015" rotation="0 104 -88.17"></a-gltf-model>
+      <a-gltf-model id="mithraeum" src="../models/gltf/decimatedMithraeum.glb">
+      </a-gltf-model>
+      <a-gltf-model id="mithraeumGLB" src="../models/gltf/mithraeumGLB.glb"></a-gltf-model>
+      <!-- OBJ Models-->
+      <a-asset-item id="boxer" src="../models/boxer/boxer.obj"></a-asset-item>
+      <a-asset-item id="boxer-mtl" src="../models/boxer/boxer.mtl"></a-asset-item>
+      <a-asset-item id="building-obj" src="../models/building/buildingOBJ.obj"></a-asset-item>
+      <a-asset-item id="building-mtl" src="../models/building/buildingOBJ.mtl"></a-asset-item>
+      <a-asset-item id="central" src="../models/building/centralStation.obj"></a-asset-item>
+      <a-asset-item id="central-mtl" src="../models/building/centralStation.mtl"></a-asset-item>
+      <a-asset-item id="stoneBallObj" src="../models/stone-balls/stone-balls.obj"></a-asset-item>
+      <a-asset-item id="stoneBallMtl" src="../models/stone-balls/stone-balls.mtl"></a-asset-item>
+      <a-asset-item id="mummy-head" src="../models/mummy-head/mummy-head.obj"></a-asset-item>
+      <a-asset-item id="mummy-head-mtl" src="../models/mummy-head/mummy-head.mtl"></a-asset-item>
+      <a-asset-item id="marcus-obj" src="../models/marcus-aurelius-ncma/marcus.obj"></a-asset-item>
+      <a-asset-item id="marcus-mtl" src="../models/marcus-aurelius-ncma/marcus.mtl"></a-asset-item>
+    </a-assets>
+
+    <a-sky src="url(../img/sky.jpg)"></a-sky>
+    <a-entity id="cameraRig">
+      <a-camera twoway-motion="speed: 35" wasd-controls="acceleration: 50"></a-camera>
+      <a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;">
+      </a-entity>
+      <a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;">
+      </a-entity>
+    </a-entity>
+
+    <a-entity teleport-controls="startEvents: teleportstart; endEvents: teleportend" vive-controls="hand: left"
+      oculus-touch-controls="hand: left" microsoft-motion-controls="hand: left" daydream-controls="left"
+      gearvr-controls="left">
+    </a-entity>
+
+    <a-entity teleport-controls="startEvents: teleportstart; endEvents: teleportend; type: line"
+      vive-controls="hand: right" microsoft-motion-controls="hand: right" oculus-touch-controls="hand: right"
+      daydream-controls="right" gearvr-controls="right">
+    </a-entity>
+
+    <a-entity id="education">
+      <a-entity>
+        <a-image src="../img/DukeChapel.jpg" material="" position="0.10217 1.11 11.902" rotation="0 180 0"
+          scale="1.5 2 1" geometry=""></a-image>
+        <a-image src="../img/kvilleGraduation.JPG" material="" position="6.07146 1.11 11.8814" rotation="0 180 0"
+          scale="1.5 2 2" geometry=""></a-image>
+      </a-entity>
+      <a-entity>
+        <a-image src="../img/UniGlasgowFront.JPG" material="" position="20.22498 1.11 11.8814" rotation="0 180 0"
+          scale="1.5 2 2" geometry=""></a-image>
+      </a-entity>
+      <a-entity>
+        <a-image src="../img/GlasgowTower.jpg" material="" position="13.15495 1.11 11.8814" rotation="0 180 0"
+          scale="1.5 2 2" geometry=""></a-image>
+      </a-entity>
+    </a-entity>
+
+    <a-entity>
+      <a-text color="white" text="" position="-4.02045 1.35125 -8.42117"
+        value="Work in progress, Mayers CV. Walk around to see some of the work that I have done."></a-text>
+    </a-entity>
+    <a-entity>
+      <a-text color="black" rotation="0 -90 0" position="8.878 2.160 -4.067" value="Interactable Keyboard.">
+      </a-text>
+      <a-video src="../videos/interactableKeyboard.mp4" width="2" height="1" position="8.878 1 -3.114" rotation="0 90 0"
+        scale="2 2 2"></a-video>
+    </a-entity>
+
+    <a-entity id="gltf-models">
+      <a-entity gltf-model="#clt" position="17.467 0.1 49" scale="1 1 1"></a-entity>
+      <a-entity position="-7.68861 0.7649 0.71404" rotation="-5.778279363894352 27.15075103786432 -95.75900925800963"
+        scale="0.05 0.05 0.05" obj-model="obj:#boxer; mtl: #boxer-mtl"></a-entity>
+      <a-entity gltf-model="#carrawburgh" scale="0.01 0.01 0.01" position="0 0 -44.87"></a-entity>
+      <a-entity gltf-model="#mural" scale=".09 .09 .09" position="2.476 1.083 -5.547" rotation="4.645 0 0">
+      </a-entity>
+      <a-entity gltf-model="#lion" scale="0.05 0.05 0.05" position="20.17056 1.80176 6.03387"
+        rotation="-22.900000000000002 73.96 -93"></a-entity>
+      <a-entity gltf-model="#lion_fountain" scale="3 3 3" position="19.1014 0.20223 7.07302"
+        rotation="-0.1283425461093044 68.17223733805073 0.8989707805602616"></a-entity>
+      <a-entity gltf-model="#vase" position="-5.98 0 -3.841" rotation="23.4 59.02 -89.45" scale="0.2 0.2 0.2">
+      </a-entity>
+      <a-entity obj-model="obj:#building-obj; mtl:#building-mtl" position="14.90054 0.084 -24.26609"
+        rotation="0 -2.8848424984836947 0" scale="0.001 0.001 0.001"></a-entity>
+      <a-entity gltf-model="#mithras" position="0 .5 -10" rotation="0 0 -91.72" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity obj-model="obj: #central; mtl:#central-mtl" position="-0.27264 0.084 -25.78637"
+        rotation="0 94.15128968487254 0" scale="0.03 0.03 0.03" material=""></a-entity>
+      <a-entity gltf-model="#primaporta" scale="0.1 0.1 0.1" position="-4.74 0.843 -7.015" rotation="0 104 -88.17">
+      </a-entity>
+      <a-entity obj-model="obj:#mummy-head; mtl:#mummy-head-mtl" scale="0.5 0.5 0.5" position="0 0.582 -6.493"
+        rotation="-7.8 -8 -94.3"></a-entity>
+      <a-entity obj-model="obj: #stoneBallObj; mtl:#stoneBallMtl" scale="0.5 0.5 0.5" position="5.12229 3 3.99216"
+        rotation="-64.65141168697183 3.0000000000000004 109.85663580720352"></a-entity>
+      <a-entity obj-model="obj: #marcus-obj; mtl:#marcus-mtl" rotation="0 0 0" position="-6 0.6 10.6" scale="0.05 0.05 0.05"></a-entity>
+    </a-entity>
+
+    <a-entity id="mithraeum">
+      <a-entity position="-13 14 10"
+        animation="property: position; to: -13 -10 10; dur: 5000; easing: linear; loop: true">
+        <a-cone radius-bottom="1" geometry="radiusTop: 0" radius-top="0" position="-13.09613 12.06582 33.97992"
+          color="blue" material="" scale="1 2 1" rotation="0 0 180"></a-cone>
+        <a-text color="black" text="" position="-8.60247 13.06582 32.22485" rotation="0 -180 0"
+          value="Carrawburgh Mithraeum, Photogrammetry model and 3DS model" scale="3 3 3"></a-text>
+        <a-plane position="-15.90141 13.06582 32.93723" rotation="0 -180 0" scale="15 2 5" material="" geometry="">
+        </a-plane>
+      </a-entity>
+      <a-entity gltf-model="#mithraeum" scale="0.4 0.4 0.4" position="-23.375 -5.09463 29.08174"
+        rotation="-27.32664908096948 -92.48971207899314 12.89613405280457"></a-entity>
+      <a-entity gltf-model="#mithraeumGLB" position="-16.57273 -1.83976 26.03592" scale="0.03 0.03 0.03"
+        rotation="-0.14553127996322912 87.91521704266864 -3.990651043086184">
+      </a-entity>
+      <a-plane position="-15.18407 0.10028 36.25004" rotation="0 90 0" scale="6 5 5" material="" geometry="">
+      </a-plane>
+      <a-text color="black" text="" position="-15.00043 1.35965 39.17881" rotation="0 90 0"
+        value="Carrawburgh Mithraeum, Photogrammetry model and 3DS model"></a-text>
+    </a-entity>
+  </a-scene>
+</body>
+
+</html>
