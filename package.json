@@ -20,7 +20,7 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-scripts": "4.0.3",
-    "three": "^0.134.0",
+    "three": "^0.137.0",
     "three-pointer-controls": "^0.6.0",
     "web-vitals": "^1.0.1"
   },
